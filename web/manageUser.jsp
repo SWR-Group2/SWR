@@ -72,72 +72,69 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th style="width:10%;">#</th>
-                                            <th style="width:40%;">Name</th>
-                                            <th style="width:25%">Email</th>
-                                            <th class="d-none d-md-table-cell" style="width:25%">Date of Birth</th>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th class="d-none d-md-table-cell">Avatar</th>
+                                            <th>Password</th>
+                                            <th>Role</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                <img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Vanessa
-                                                Tucker
-                                            </td>
-                                            <td>864-348-0485</td>
-                                            <td class="d-none d-md-table-cell">June 21, 1961</td>
+                                            <td>1</td>
+                                            <td>Vanessa Tucker</td>
+                                            <td>vanser@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>******</th>
+                                            <th>WareHouse Staff</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <img src="img/avatars/avatar-2.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> William
-                                                Harris
-                                            </td>
-                                            <td>914-939-2458</td>
-                                            <td class="d-none d-md-table-cell">May 15, 1948</td>
+                                            <td>1</td>
+                                            <td>William Harris</td>
+                                            <td>vanser@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>******</th>
+                                            <th>WareHouse Staff</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <img src="img/avatars/avatar-3.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Sharon
-                                                Lessman
-                                            </td>
-                                            <td>704-993-5435</td>
-                                            <td class="d-none d-md-table-cell">September 14, 1965</td>
+                                            <td>1</td>
+                                            <td>Sharon Lessman</td>
+                                            <td>vanser@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>******</th>
+                                            <th>WareHouse Staff</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <img src="img/avatars/avatar-4.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Christina
-                                                Mason
-                                            </td>
-                                            <td>765-382-8195</td>
-                                            <td class="d-none d-md-table-cell">April 2, 1971</td>
+                                            <td>1</td>
+                                            <td>Christina Mason</td>
+                                            <td>vanser@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>******</th>
+                                            <th>WareHouse Staff</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <img src="img/avatars/avatar-2.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Robin
-                                                Schneiders
-                                            </td>
-                                            <td>202-672-1407</td>
-                                            <td class="d-none d-md-table-cell">October 12, 1966</td>
+                                            <td>1</td>
+                                            <td>Robin Schneiders</td>
+                                            <td>vanser@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>******</th>
+                                            <th>WareHouse Staff</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
-                                                <a href="#"><i class="align-middle" data-feather="trash"></i></a>
                                             </td>
                                         </tr>
                                     </tbody>
