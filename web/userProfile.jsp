@@ -636,25 +636,6 @@
                                                                 <input type="email" class="form-control" id="email" name="email" value="nguyenvanA@gmail.com">
                                                             </div>
                                                             <div class="mb-3">
-                                                                <label class="form-label" for="phoneNumber">Phone Number</label>
-                                                                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" value="0123456789">
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label class="form-label" for="sex">Sex</label>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="sex" id="sexMale" value="Male" checked>
-                                                                    <label class="form-check-label" for="sexMale">Male</label>
-                                                                </div>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="sex" id="sexFemale" value="Female">
-                                                                    <label class="form-check-label" for="sexFemale">Female</label>
-                                                                </div>
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="sex" id="sexOther" value="Other">
-                                                                    <label class="form-check-label" for="sexOther">Other</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="mb-3">
                                                                 <label class="form-label" for="address">Address</label>
                                                                 <textarea rows="2" class="form-control" id="address" name="address">Thon Thach Hoa xa Thach That Ha Noi</textarea>
                                                             </div>
