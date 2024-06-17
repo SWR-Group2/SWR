@@ -67,6 +67,7 @@
                                             </button>
                                         </div>
                                     </form>
+                                    <button class="btn btn-square btn-success">New Account</button>
                                 </div>
 
                                 <table class="table">
@@ -86,7 +87,7 @@
                                             <td>1</td>
                                             <td>Vanessa Tucker</td>
                                             <td>vanser@gmail.com</td>
-                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-2.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
                                             <th>******</th>
                                             <th>WareHouse Staff</th>
                                             <td class="table-action">
@@ -94,45 +95,45 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td>2</td>
                                             <td>William Harris</td>
-                                            <td>vanser@gmail.com</td>
-                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
-                                            <th>******</th>
-                                            <th>WareHouse Staff</th>
+                                            <td>william@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-2.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>********</th>
+                                            <th>User</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td>3</td>
                                             <td>Sharon Lessman</td>
-                                            <td>vanser@gmail.com</td>
-                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
-                                            <th>******</th>
-                                            <th>WareHouse Staff</th>
+                                            <td>sharon@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-3.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>*******</th>
+                                            <th>User</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td>4</td>
                                             <td>Christina Mason</td>
-                                            <td>vanser@gmail.com</td>
-                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
-                                            <th>******</th>
-                                            <th>WareHouse Staff</th>
+                                            <td>mason@gmail.com</td>
+                                            <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-4.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
+                                            <th>*********</th>
+                                            <th>User</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>1</td>
+                                            <td>5</td>
                                             <td>Robin Schneiders</td>
-                                            <td>vanser@gmail.com</td>
+                                            <td>robin@gmail.com</td>
                                             <td class="d-none d-md-table-cell"><img src="img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt="Avatar"></td>
-                                            <th>******</th>
-                                            <th>WareHouse Staff</th>
+                                            <th>*******</th>
+                                            <th>User</th>
                                             <td class="table-action">
                                                 <a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
                                             </td>

@@ -74,8 +74,8 @@
                         </a>
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                             <li class="sidebar-item"><a class="sidebar-link" href="manageUser.jsp">Manage Account</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Manage Product</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Manage Order</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="manageProduct.jsp">Manage Product</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="manageOrder.jsp">Manage Order</a></li>
                         </ul>
                     </li>
 
@@ -110,8 +110,8 @@
                             <i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>
                         </a>
                         <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Sign In</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">Sign Up</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="login.jsp">Sign In</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="signUp.jsp">Sign Up</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="pages-reset-password.html">Reset Password <span
                                         class="sidebar-badge badge bg-primary">Pro</span></a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="pages-404.html">404 Page <span
