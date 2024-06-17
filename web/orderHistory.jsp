@@ -1,11 +1,3 @@
-<%-- 
-    Document   : CartCheckOut
-    Created on : Jun 13, 2024, 11:00:18 PM
-    Author     : ADMIN
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,9 +12,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
-	<link rel="canonical" href="pages-invoice.html" />
+	<link rel="canonical" href="pages-clients.html" />
 
-	<title>Invoice | AdminKit Demo</title>
+	<title>Clients | AdminKit Demo</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
@@ -114,15 +106,15 @@
 						</ul>
 					</li>
 
-					<li class="sidebar-item">
-						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+					<li class="sidebar-item active">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link">
 							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Pages</span>
 						</a>
-						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Settings</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projects.html">Projects <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">Clients <span
+							<li class="sidebar-item active"><a class="sidebar-link" href="pages-clients.html">Clients <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-pricing.html">Pricing <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
@@ -138,7 +130,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="pages-invoice.html">
 							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
 						</a>
@@ -344,7 +336,7 @@
 
 				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
-						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<input type="text" class="form-control" placeholder="Search?" aria-label="Search">
 						<button class="btn" type="button">
 							<i class="align-middle" data-feather="search"></i>
 						</button>
@@ -590,118 +582,108 @@
 							</div>
 						</li>
 					</ul>
-                                    
 				</div>
-                            
 			</nav>
 
-			
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Cart Checkout</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .cart, .delivery {
-            display: inline-block;
-            vertical-align: top;
-        }
-        .cart {
-            width: 45%;
-        }
-        .delivery {
-            width: 45%;
-            margin-left: 5%;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        .payment-method {
-            margin-top: 20px;
-        }
-        .payment-method input {
-            margin-right: 10px;
-        }
-        .submit-button {
-            margin-top: 20px;
-        }
-    </style>
-</head>
+
+
 <body>
-    <div class="container">
-        <h1>Cart Checkout</h1>
-        <form action="checkout.jsp" method="post">
-            <div class="cart">
-                <table>
-                    <tr>
-                        <th>Product</th>
-                        <th>Sub Total</th>
-                    </tr>
-                    <tr>
-                        <td>Product name 1</td>
-                        <td>1.000đ</td>
-                    </tr>
-                    <tr>
-                        <td>Product name 2</td>
-                        <td>2.000đ</td>
-                    </tr>
-                </table>
-                <div class="payment-method">
-                    <p>Payment Method</p>
-                    <input type="radio" name="paymentMethod" value="COD" id="cod">
-                    <label for="cod">COD</label><br>
-                    <input type="radio" name="paymentMethod" value="Bank Transfer" id="bankTransfer">
-                    <label for="bankTransfer">Bank Transfer</label><br>
-                    <input type="radio" name="paymentMethod" value="Internet Banking" id="internetBanking">
-                    <label for="internetBanking">Internet Banking</label>
+    <main class="content">
+        <div class="container-fluid p-0">
+            <div class="mb-3">
+                <h1 class="h3 d-inline align-middle">Order History</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <h5 class="card-title mb-0">Order History</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <select class="form-select" id="status-filter">
+                                        <option value="all">All Statuses</option>
+                                        <option value="processing">Processing</option>
+                                        <option value="shipped">Shipped</option>
+                                        <option value="delivered">Delivered</option>
+                                        <option value="pending">Pending</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" id="search" class="form-control" placeholder="Enter keyword to search">
+                                </div>
+                            </div>
+
+                            <table class="table table-striped mt-3" id="order-table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Ordered Date</th>
+                                        <th>Total Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD1237</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$150.00</td>
+                                        <td>Processing</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1236</td>
+                                        <td>2024-06-09 09:45 AM</td>
+                                        <td>$80.00</td>
+                                        <td>Shipped</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1235</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$15.00</td>
+                                        <td>Delivered</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1234</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$300.00</td>
+                                        <td>Pending</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>Sub Total: 3.000đ</p>
-                    <p>Shipping Fee: 30.000đ</p>
-                    <p>Total: 33.000đ</p>
-                </div>
             </div>
-            <div class="delivery">
-                <p>Delivery Details</p>
-                <label for="fullName">Full name</label><br>
-                <input type="text" id="fullName" name="fullName" required><br>
-                <label for="phone">Phone</label><br>
-                <input type="text" id="phone" name="phone" required><br>
-                <label for="address">Address<span style="color:red;">*</span></label><br>
-                <input type="text" id="address" name="address" required><br>
-                <label for="districtCity">District/City</label><br>
-                <select id="districtCity" name="districtCity" required>
-                    <option value="">Select</option>
-                    <option value="Hanoi">Hanoi</option>
-                    <option value="Ho Chi Minh City">Ho Chi Minh City</option>
-                    <!-- Add more options as needed -->
-                </select><br>
-                <label for="notes">Notes</label><br>
-                <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
-            </div>
-            <div class="submit-button">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-</body>
-</html>
-	<footer class="footer">
+
+        </div>
+ 	<footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">
 						<div class="col-6 text-start">
@@ -739,7 +721,7 @@
       if(localStorage.getItem('popState') !== 'shown'){
         window.notyf.open({
           type: "success",
-          message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
+          message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> ?",
           duration: 10000,
           ripple: true,
           dismissible: false,
@@ -756,3 +738,4 @@
 </script></body>
 
 </html>
+
