@@ -12500,7 +12500,7 @@ body[data-sidebar-layout=compact][data-sidebar-position=right] .sidebar.collapse
 }
 table.dataTable tbody>tr.selected,table.dataTable.table-striped>tbody>tr.odd.selected{
     --bs-table-accent-bg:$primary;
-    background-color:#3b7ddd
+    background-color:#3b7ddd;
 }
 .tab{
     margin-bottom:2rem
