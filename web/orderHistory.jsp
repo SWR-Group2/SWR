@@ -12,9 +12,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
-	<link rel="canonical" href="pages-invoice.html" />
+	<link rel="canonical" href="pages-clients.html" />
 
-	<title>Invoice | AdminKit Demo</title>
+	<title>Clients | AdminKit Demo</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
@@ -106,15 +106,15 @@
 						</ul>
 					</li>
 
-					<li class="sidebar-item">
-						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed">
+					<li class="sidebar-item active">
+						<a data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link">
 							<i class="align-middle" data-feather="layout"></i> <span class="align-middle">Pages</span>
 						</a>
-						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">Settings</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-projects.html">Projects <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">Clients <span
+							<li class="sidebar-item active"><a class="sidebar-link" href="pages-clients.html">Clients <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-pricing.html">Pricing <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
@@ -130,7 +130,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-item active">
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="pages-invoice.html">
 							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
 						</a>
@@ -218,9 +218,7 @@
 						</a>
 					</li>
 
-					<li class="sidebar-header">
-						Plugins & Addons
-					</li>
+					
 					<li class="sidebar-item">
 						<a data-bs-target="#form-plugins" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="check-square"></i> <span class="align-middle">Form Plugins</span>
@@ -338,7 +336,7 @@
 
 				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
-						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<input type="text" class="form-control" placeholder="Search?" aria-label="Search">
 						<button class="btn" type="button">
 							<i class="align-middle" data-feather="search"></i>
 						</button>
@@ -587,134 +585,105 @@
 				</div>
 			</nav>
 
-			<main class="content">
-				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3">Invoice</h1>
 
-					<div class="row">
-						<div class="col-12">
-							<div class="card">
-								<div class="card-body m-sm-3 m-md-5">
-									<div class="mb-4">
-										Hello <strong>Charles Hall</strong>,
-										<br />
-										This is the receipt for a payment of <strong>$268.00</strong> (USD) you made to AdminKit Demo.
-									</div>
+<body>
+    <main class="content">
+        <div class="container-fluid p-0">
+            <div class="mb-3">
+                <h1 class="h3 d-inline align-middle">Order History</h1>
+            </div>
 
-									<div class="row">
-										<div class="col-md-6">
-											<div class="text-muted">Payment No.</div>
-											<strong>741037024</strong>
-										</div>
-										<div class="col-md-6 text-md-end">
-											<div class="text-muted">Payment Date</div>
-											<strong>October 2, 2021 - 03:45 pm</strong>
-										</div>
-									</div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card">
+                        <div class="card-header pb-0">
+                            <h5 class="card-title mb-0">Order History</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <select class="form-select" id="status-filter">
+                                        <option value="all">All Statuses</option>
+                                        <option value="processing">Processing</option>
+                                        <option value="shipped">Shipped</option>
+                                        <option value="delivered">Delivered</option>
+                                        <option value="pending">Pending</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" id="search" class="form-control" placeholder="Enter keyword to search">
+                                </div>
+                            </div>
 
-									<hr class="my-4" />
+                            <table class="table table-striped mt-3" id="order-table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Ordered Date</th>
+                                        <th>Total Amount</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD1237</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$150.00</td>
+                                        <td>Processing</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1236</td>
+                                        <td>2024-06-09 09:45 AM</td>
+                                        <td>$80.00</td>
+                                        <td>Shipped</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1235</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$15.00</td>
+                                        <td>Delivered</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD1234</td>
+                                        <td>2024-06-10 10:30 AM</td>
+                                        <td>$300.00</td>
+                                        <td>Pending</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-									<div class="row mb-4">
-										<div class="col-md-6">
-											<div class="text-muted">Client</div>
-											<strong>
-												Charles Hall
-											</strong>
-											<p>
-												4183 Forest Avenue <br>
-												New York City <br>
-												10011 <br>
-												USA <br>
-												<a href="#">
-													chris.wood@gmail.com
-												</a>
-											</p>
-										</div>
-										<div class="col-md-6 text-md-end">
-											<div class="text-muted">Payment To</div>
-											<strong>
-												AdminKit Demo LLC
-											</strong>
-											<p>
-												354 Roy Alley <br>
-												Denver <br>
-												80202 <br>
-												USA <br>
-												<a href="#">
-													info@adminkit.com
-												</a>
-											</p>
-										</div>
-									</div>
-
-									<table class="table table-sm">
-										<thead>
-											<tr>
-												<th>Description</th>
-												<th>Quantity</th>
-												<th class="text-end">Amount</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>AdminKit Demo Theme Customization</td>
-												<td>2</td>
-												<td class="text-end">$150.00</td>
-											</tr>
-											<tr>
-												<td>Monthly Subscription </td>
-												<td>3</td>
-												<td class="text-end">$25.00</td>
-											</tr>
-											<tr>
-												<td>Additional Service</td>
-												<td>1</td>
-												<td class="text-end">$100.00</td>
-											</tr>
-											<tr>
-												<th>&nbsp;</th>
-												<th>Subtotal </th>
-												<th class="text-end">$275.00</th>
-											</tr>
-											<tr>
-												<th>&nbsp;</th>
-												<th>Shipping </th>
-												<th class="text-end">$8.00</th>
-											</tr>
-											<tr>
-												<th>&nbsp;</th>
-												<th>Discount </th>
-												<th class="text-end">5%</th>
-											</tr>
-											<tr>
-												<th>&nbsp;</th>
-												<th>Total </th>
-												<th class="text-end">$268.85</th>
-											</tr>
-										</tbody>
-									</table>
-
-									<div class="text-center">
-										<p class="text-sm">
-											<strong>Extra note:</strong>
-											Please send all items at the same time to the shipping address.
-											Thanks in advance.
-										</p>
-
-										<a href="#" class="btn btn-primary">
-											Print this receipt
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</main>
-
-			<footer class="footer">
+        </div>
+ 	<footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">
 						<div class="col-6 text-start">
@@ -752,7 +721,7 @@
       if(localStorage.getItem('popState') !== 'shown'){
         window.notyf.open({
           type: "success",
-          message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
+          message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> ?",
           duration: 10000,
           ripple: true,
           dismissible: false,
@@ -769,3 +738,4 @@
 </script></body>
 
 </html>
+
