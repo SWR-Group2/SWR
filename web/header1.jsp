@@ -115,7 +115,7 @@
                                         <a href="dashboard.jsp">DashBoard</a><br>
                                         <a href="login.jsp">Login</a><br>
                                         <a href="signUp.jsp">Register</a><br>
-                                        <a href="#">My Order</a><br>
+                                        <a href="orderHistory.jsp">My Order</a><br>
                                         <a href="#">Logout</a><br>
                                     </div>
                                 </div>
