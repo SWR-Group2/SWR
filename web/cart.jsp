@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>Electro - HTML Ecommerce Template</title>
+        <title>Online Shopping System</title>
 
         <!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -143,7 +143,7 @@
                     <div class="col-md-2">
                         <div class="order-col">
                             <div><strong>TOTAL</strong></div>
-                            <div><strong class="order-total" style="color: #518BE1;">19.000.000đ</strong></div>
+                            <div><strong class="order-total" style="color: #518BE1;">17.000.000đ</strong></div>
                         </div>
                     </div>
                 </div>

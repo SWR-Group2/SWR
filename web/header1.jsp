@@ -22,9 +22,6 @@
                         <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
                         <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
                     </ul>
-                    <ul class="header-links pull-right">
-                        <li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-                    </ul>
                 </div>
             </div>
             <!-- /TOP HEADER -->
@@ -78,8 +75,8 @@
                                                     <img src="./img/product01.png" alt="">
                                                 </div>
                                                 <div class="product-body">
-                                                    <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                    <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                                                    <h3 class="product-name"><a href="publicProduct.jsp">Laptop Hp Victus 16</a></h3>
+                                                    <h4 class="product-price"><span class="qty">1x</span>15.000.000đ</h4>
                                                 </div>
                                                 <button class="delete"><i class="fa fa-close"></i></button>
                                             </div>
@@ -89,19 +86,19 @@
                                                     <img src="./img/product02.png" alt="">
                                                 </div>
                                                 <div class="product-body">
-                                                    <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                    <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                                                    <h3 class="product-name"><a href="publicProduct.jsp">Headphone Sony RTX3030</a></h3>
+                                                    <h4 class="product-price"><span class="qty">2x</span>1.000.000đ</h4>
                                                 </div>
                                                 <button class="delete"><i class="fa fa-close"></i></button>
                                             </div>
                                         </div>
                                         <div class="cart-summary">
-                                            <small>3 Item(s) selected</small>
-                                            <h5>SUBTOTAL: $2940.00</h5>
+                                            <small>2 Item(s) selected</small>
+                                            <h5>SUBTOTAL: 17.000.000đ</h5>
                                         </div>
                                         <div class="cart-btns">
-                                            <a href="#">View Cart</a>
-                                            <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                                            <a href="cart.jsp">View Cart</a>
+                                            <a href="cartCheckout.jsp">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>

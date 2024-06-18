@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>Electro - HTML Ecommerce Template</title>
+        <title>Online Shopping System</title>
 
         <!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -142,12 +142,12 @@
                             </div>
                             <div class="order-products">
                                 <div class="order-col">
-                                    <div>1x Product Name Goes Here</div>
-                                    <div>500.000vnd</div>
+                                    <div>1x Laptop Hp Victus 16</div>
+                                    <div>15.000.000đ</div>
                                 </div>
                                 <div class="order-col">
-                                    <div>2x Product Name Goes Here</div>
-                                    <div>1.000.000vnd</div>
+                                    <div>2x Headphone Sony RTX3030</div>
+                                    <div>1.000.000đ</div>
                                 </div>
                             </div>
                             <div class="order-col">
@@ -156,7 +156,7 @@
                             </div>
                             <div class="order-col">
                                 <div><strong>TOTAL</strong></div>
-                                <div><strong class="order-total">1.530.000vnd</strong></div>
+                                <div><strong class="order-total">17.030.000đ</strong></div>
                             </div>
                         </div>
                         <div class="payment-method">
@@ -198,7 +198,7 @@
                                 I've read and accept the <a href="#">terms & conditions</a>
                             </label>
                         </div>
-                        <a href="#" class="primary-btn order-submit">Submit</a>
+                        <a href="homepage.jsp" class="primary-btn order-submit">Submit</a>
                     </div>
                     <!-- /Order Details -->
                 </div>

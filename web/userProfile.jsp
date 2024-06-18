@@ -16,7 +16,7 @@
 
         <link rel="canonical" href="tables-bootstrap.html" />
 
-        <title>Tables | AdminKit Demo</title>
+        <title>Profile</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">

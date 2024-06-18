@@ -17,7 +17,7 @@
                         <div class="row text-muted">
                             <div class="col-6 text-start">
                                 <p class="mb-0">
-                                    <a href="https://adminkit.io/" target="_blank" class="text-muted"><strong>AdminKit</strong></a> &copy;
+                                    <a href="https://adminkit.io/" target="_blank" class="text-muted"><strong>Online Shopping System Dashboard</strong></a> &copy;
                                 </p>
                             </div>
                             <div class="col-6 text-end">

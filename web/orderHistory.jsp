@@ -14,7 +14,7 @@
 
 	<link rel="canonical" href="pages-clients.html" />
 
-	<title>Clients | AdminKit Demo</title>
+	<title>OSS - Order History</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
