@@ -24,6 +24,14 @@
             body {
                 opacity: 0;
             }
+            .search-filter-group {
+                display: flex;
+                align-items: center;
+                width:600px;
+            }
+            .search-filter-group .input-group-navbar {
+                margin-right: 300px;
+            }
         </style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
@@ -51,14 +59,24 @@
                         <div class="row">
                             <div class="card">
                                 <div class="card-header">
-                                    <form class="d-none d-sm-inline-block">
-                                        <div class="input-group input-group-navbar">
-                                            <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
-                                            <button class="btn" type="button">
-                                                <i class="align-middle" data-feather="search"></i>
-                                            </button>
-                                        </div>
-                                    </form>
+                                    <div class="search-filter-group">
+                                        <form class="d-none d-sm-inline-block">
+                                            <div class="input-group input-group-navbar">
+                                                <input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+                                                <button class="btn" type="button">
+                                                    <i class="align-middle" data-feather="search"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <select class="form-select" id="filterBy" onchange="filterProducts()">
+                                            <option value="all">Filter By Category</option>
+                                            <option value="Quần">Quần</option>
+                                            <option value="Áo">Áo</option>
+                                            <option value="Đồng hồ">Đồng hồ</option>
+                                            <option value="Điện thoại">Điện thoại</option>
+                                            <option value="Giày">Giày</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <table class="table">
@@ -73,8 +91,8 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
+                                    <tbody id="productTableBody">
+                                        <tr data-product-type="Quần">
                                             <td><input type="checkbox" class="product-checkbox" value="1"></td>
                                             <td>1</td>
                                             <td>Quần suông ống rộng</td>
@@ -86,7 +104,7 @@
                                                 <button type="button" class="btn btn-danger" onclick="deleteProduct(1)">Delete</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr data-product-type="Áo">
                                             <td><input type="checkbox" class="product-checkbox" value="2"></td>
                                             <td>2</td>
                                             <td>Áo Sơ Mi Tay Ngắn</td>
@@ -98,7 +116,7 @@
                                                 <button type="button" class="btn btn-danger" onclick="deleteProduct(2)">Delete</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr data-product-type="Đồng hồ">
                                             <td><input type="checkbox" class="product-checkbox" value="3"></td>
                                             <td>3</td>
                                             <td>Đồng hồ Rolex</td>
@@ -110,7 +128,7 @@
                                                 <button type="button" class="btn btn-danger" onclick="deleteProduct(3)">Delete</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr data-product-type="Điện thoại">
                                             <td><input type="checkbox" class="product-checkbox" value="4"></td>
                                             <td>4</td>
                                             <td>Iphone 15 promax</td>
@@ -122,7 +140,7 @@
                                                 <button type="button" class="btn btn-danger" onclick="deleteProduct(4)">Delete</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr data-product-type="Giày">
                                             <td><input type="checkbox" class="product-checkbox" value="5"></td>
                                             <td>5</td>
                                             <td>Giày Nike</td>
@@ -134,7 +152,7 @@
                                                 <button type="button" class="btn btn-danger" onclick="deleteProduct(5)">Delete</button>
                                             </td>
                                         </tr>
-                                        <tr>
+                                        <tr data-product-type="Giày">
                                             <td><input type="checkbox" class="product-checkbox" value="6"></td>
                                             <td>6</td>
                                             <td>Giày Adidas</td>
@@ -157,7 +175,6 @@
             </div>
         </div>
 
-        <!-- Product Detail Modal -->
         <!-- Product Detail Modal -->
         <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -226,37 +243,21 @@
                 // Close the modal after saving
                 $('#productDetailModal').modal('hide');
             }
+
+            function filterProducts() {
+                const filter = document.getElementById('filterBy').value;
+                const rows = document.querySelectorAll('#productTableBody tr');
+
+                rows.forEach(row => {
+                    const type = row.getAttribute('data-product-type');
+                    if (filter === 'all' || type === filter) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
         </script>
-
-        <style>
-            #productDetailForm {
-                display: flex;
-                flex-direction: column;
-            }
-
-            #productDetailForm .form-label {
-                margin-bottom: 5px;
-            }
-
-            #productDetailForm .form-control,
-            #productDetailForm .form-select {
-                margin-bottom: 15px;
-            }
-
-            #productDetailForm .btn {
-                margin-right: 10px;
-            }
-
-            .modal-body {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .img-thumbnail {
-                height: auto;
-                width: 100%;
-            }
-        </style>
 
         <script src="js/app.js"></script>
         <script>

@@ -5,7 +5,6 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
         <meta name="author" content="AdminKit">
@@ -13,36 +12,21 @@
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
-
         <link rel="canonical" href="tables-bootstrap.html" />
-
         <title>Tables | AdminKit Demo</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>body {
-                opacity: 0;
-            }
-        </style>
-        <!-- END SETTINGS -->
+        <style>body { opacity: 0; }</style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+            function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-
             gtag('config', 'UA-120946860-10', {'anonymize_ip': true});
-        </script></head>
-    <!--
-      HOW TO USE: 
-      data-theme: default (default), dark, light, colored
-      data-layout: fluid (default), boxed
-      data-sidebar-position: left (default), right
-      data-sidebar-layout: default (default), compact
-    -->
+        </script>
+    </head>
 
     <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
         <div class="wrapper">
@@ -56,19 +40,12 @@
 
                         <div class="row">
                             <div class="col-md-3 col-xl-2">
-
                                 <div class="card">
                                     <div class="card-header">
                                         <h5 class="card-title mb-0">Profile Settings</h5>
                                     </div>
-
                                     <div class="list-group list-group-flush" role="tablist">
-                                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#myprofile" role="tab">
-                                            My Profile
-                                        </a>
-                                        <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#password" role="tab">
-                                            Password
-                                        </a>
+                                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#myprofile" role="tab">My Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,68 +53,78 @@
                             <div class="col-md-9 col-xl-10">
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active" id="myprofile" role="tabpanel">
-
                                         <div class="card">
                                             <div class="card-header">
-
                                                 <h5 class="card-title mb-0">My Profile</h5>
                                             </div>
                                             <div class="card-body">
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-md-8">
-                                                            <div class="mb-3">
-                                                                <label class="form-label" for="name">Name</label>
-                                                                <input type="text" class="form-control" id="name" name="name" value="Nguyen Van A">
+                                                            <div class="row mb-3">
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="fullName">Full name*</label>
+                                                                    <input type="text" class="form-control" id="fullName" name="fullName">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="userName">User Name*</label>
+                                                                    <input type="text" class="form-control" id="userName" name="userName">
+                                                                </div>
                                                             </div>
-                                                            <div class="mb-3">
-                                                                <label class="form-label" for="email">Email</label>
-                                                                <input type="email" class="form-control" id="email" name="email" value="nguyenvanA@gmail.com">
+                                                            <div class="row mb-3">
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="email">Email*</label>
+                                                                    <input type="email" class="form-control" id="email" name="email">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="mobile">Mobile</label>
+                                                                    <input type="text" class="form-control" id="mobile" name="mobile">
+                                                                </div>
                                                             </div>
                                                             <div class="mb-3">
                                                                 <label class="form-label" for="address">Address</label>
-                                                                <textarea rows="2" class="form-control" id="address" name="address">Thon Thach Hoa xa Thach That Ha Noi</textarea>
+                                                                <textarea rows="2" class="form-control" id="address" name="address"></textarea>
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="cityProvince">City/Province</label>
+                                                                    <select class="form-control" id="cityProvince" name="cityProvince">
+                                                                        <option value="" disabled selected>City/Province</option>
+                                                                        <!-- Options go here -->
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="district">District</label>
+                                                                    <select class="form-control" id="district" name="district">
+                                                                        <option value="" disabled selected>District</option>
+                                                                        <!-- Options go here -->
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <label class="form-label" for="wards">Wards</label>
+                                                                    <select class="form-control" id="wards" name="wards">
+                                                                        <option value="" disabled selected>Wards</option>
+                                                                        <!-- Options go here -->
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label class="form-label" for="userRole">User Role</label>
+                                                                <input type="text" class="form-control" id="userRole" name="userRole" readonly>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
-                                                            <div class="text-center">
-                                                                <img alt="Charles Hall" src="img/avatars/avatar.jpg" class="rounded-circle img-responsive mt-2"
-                                                                     width="128" height="128" />
-                                                                <div class="mt-2">
-                                                                    <span class="btn btn-primary"><i class="fas fa-upload"></i> Upload</span>
-                                                                </div>
-                                                                <small>For best results, use an image at least 128px by 128px in .jpg format</small>
+                                                        <div class="col-md-4 text-center">
+                                                            <img alt="Avatar" src="img/avatars/avatar.jpg" class="rounded-circle img-responsive mt-2" width="128" height="128" />
+                                                            <div class="mt-2">
+                                                                <a href="#" class="btn btn-primary"><i class="fas fa-upload"></i> Upload</a>
+                                                            </div>
+                                                            <div class="mt-2">
+                                                                <a href="#" class="btn btn-link btn-change-password">Change Password</a>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
                                                 </form>
-
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="password" role="tabpanel">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Password</h5>
-
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="inputPasswordCurrent">Current password</label>
-                                                            <input type="password" class="form-control" id="inputPasswordCurrent">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="inputPasswordNew">New password</label>
-                                                            <input type="password" class="form-control" id="inputPasswordNew">
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="inputPasswordNew2">Verify password</label>
-                                                            <input type="password" class="form-control" id="inputPasswordNew2">
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                                    </form>
-
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -179,6 +166,37 @@
 
         <script src="js/app.js"></script>
 
+        <!-- Password Change Modal -->
+        <div class="modal fade" id="passwordChangeModal" tabindex="-1" aria-labelledby="passwordChangeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="passwordChangeModalLabel">Password Change</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="newPassword1" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="newPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="newPassword2" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="newPassword2">
+                            </div>
+                            <div class="mb-3">
+                                <label for="passwordConfirmation" class="form-label">Password Confirmation</label>
+                                <input type="password" class="form-control" id="passwordConfirmation">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             document.addEventListener("DOMContentLoaded", function (event) {
                 setTimeout(function () {
@@ -198,7 +216,13 @@
                         localStorage.setItem('popState', 'shown');
                     }
                 }, 15000);
-            });
-        </script></body>
 
+                // Change password modal
+                document.querySelector('.btn-change-password').addEventListener('click', function() {
+                    var myModal = new bootstrap.Modal(document.getElementById('passwordChangeModal'), {});
+                    myModal.show();
+                });
+            });
+        </script>
+    </body>
 </html>
