@@ -83,7 +83,7 @@
                                                 <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter OTP " />
                                             </div>
                                             <div class="text-end mt-3">
-                                                <a href="index.html" class="btn btn-lg btn-primary" >Reset Password</a>
+                                                <a href="resetPass.jsp" class="btn btn-lg btn-primary" >Reset Password</a>
                                                 <!-- <button type="submit" class="btn btn-lg btn-primary">Reset password</button> -->
                                             </div>
                                         </form>
