@@ -82,7 +82,7 @@
                                                 <input class="form-control form-control-lg" type="email" name="email"/>
                                             </div>
                                             <div class="text-end mt-3">
-                                                <a href="index.html" class="btn btn-lg btn-primary">Update</a>
+                                                <a href="homepage.jsp" class="btn btn-lg btn-primary">Update</a>
                                                 <!-- <button type="submit" class="btn btn-lg btn-primary">Reset password</button> -->
                                             </div>
                                         </form>
