@@ -85,7 +85,7 @@
                                             <th><input type="checkbox" id="select-all"></th>
                                             <th>ID</th>
                                             <th>Product Name</th>
-                                            <th>Product Type</th>
+                                            <th>Category</th>
                                             <th>Quantity</th>
                                             <th>Unit Price</th>
                                             <th>Action</th>
