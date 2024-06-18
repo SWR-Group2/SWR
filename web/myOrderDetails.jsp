@@ -4,6 +4,26 @@
 <html lang="en">
 
     <head>
+        <title>Online Shopping System</title>
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <!-- Slick -->
+        <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+        <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+        <!-- nouislider -->
+        <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Custom stlylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,8 +35,6 @@
         <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
         <link rel="canonical" href="tables-bootstrap.html" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-        <title>My Order Details</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -33,7 +51,6 @@
                 background-color: #8C9EFF;
                 background-repeat: no-repeat;
                 margin: 0;
-                font-family: Arial, sans-serif;
             }
 
             .d-flex {
@@ -251,11 +268,10 @@
     </head>
     <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
         <div class="wrapper">
-            <%@ include file="nav-bar.jsp" %>
             <div class="main">
-                <%@ include file="header2.jsp" %>
+                <%@ include file="header1.jsp" %>
                 <main class="content">
-                    <div class="container-fluid p-0">
+                    <div class="container p-0">
                         <h1>My Order Details</h1>
                         <div class="tabs">
                             <div class="tab active" data-tab="delivery-details">Delivery</div>
@@ -287,19 +303,19 @@
                                     <div class="row d-flex justify-content-center top">
                                         <div class="icon-container d-flex justify-content-between">
                                             <div class="d-flex flex-column align-items-center icon-content">
-                                                <img class="icon" src="https://i.imgur.com/9nnc9Et.png" alt="Order Processed">
+                                                <img class="icon" src="img/orderProcessed.png" alt="Order Processed">
                                                 <p class="font-weight-bold mt-2">Order<br>Processed</p>
                                             </div>
                                             <div class="d-flex flex-column align-items-center icon-content">
-                                                <img class="icon" src="https://i.imgur.com/u1AzR7w.png" alt="Order Shipped">
+                                                <img class="icon" src="img/orderShipped.png" alt="Order Shipped">
                                                 <p class="font-weight-bold mt-2">Order<br>Shipped</p>
                                             </div>
                                             <div class="d-flex flex-column align-items-center icon-content">
-                                                <img class="icon" src="https://i.imgur.com/TkPm63y.png" alt="Order En Route">
+                                                <img class="icon" src="img/orderEnRoute.png" alt="Order En Route">
                                                 <p class="font-weight-bold mt-2">Order<br>En Route</p>
                                             </div>
                                             <div class="d-flex flex-column align-items-center icon-content">
-                                                <img class="icon" src="https://i.imgur.com/HdsziHP.png" alt="Order Arrived">
+                                                <img class="icon" src="img/orderArrived.png" alt="Order Arrived">
                                                 <p class="font-weight-bold mt-2">Order<br>Arrived</p>
                                             </div>
                                         </div>
@@ -386,10 +402,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><img src="path/to/image1.jpg" alt="Nồi áp suất elmic"></td>
+                                        <td><img src="img/product06.png" alt="Laptop"></td>
                                         <td>
-                                            <strong>Nồi áp suất elmic</strong><br>
-                                            Category: Đồ gia dụng<br>
+                                            <strong>Laptop Abx</strong><br>
+                                            Category: Laptop<br>
                                             Available: 10
                                         </td>
                                         <td>
@@ -402,10 +418,10 @@
                                         <td><button class="cancel-btn">Cancel</button></td>
                                     </tr>
                                     <tr>
-                                        <td><img src="path/to/image2.jpg" alt="Máy hút bụi không dây"></td>
+                                        <td><img src="img/product07.png" alt="phone"></td>
                                         <td>
-                                            <strong>Máy hút bụi không dây</strong><br>
-                                            Category: Đồ gia dụng<br>
+                                            <strong>Smartphone</strong><br>
+                                            Category: Phone<br>
                                             Available: 8
                                         </td>
                                         <td>
@@ -427,152 +443,161 @@
                             <button class="btn btn-primary mt-3">Check out</button>
                         </div>
                         <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="selectProductModalLabel">Product Selection</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Filter and Search Section -->
-                                    <div class="form-row mb-3">
-                                        <div class="col-md-4">
-                                            <select class="form-control">
-                                                <option>All Categories</option>
-                                                <!-- Add more categories as options here -->
-                                            </select>
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="selectProductModalLabel">Product Selection</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Filter and Search Section -->
+                                        <div class="form-row mb-3">
+                                            <div class="col-md-4">
+                                                <select class="form-control">
+                                                    <option>All Categories</option>
+                                                    <!-- Add more categories as options here -->
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Enter key word to search">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-primary btn-block">Search</button>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" placeholder="Enter key word to search">
+                                        <!-- Product List Table -->
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th><input type="checkbox"></th>
+                                                        <th>ProductID</th>
+                                                        <th>Image</th>
+                                                        <th>Product</th>
+                                                        <th>Price</th>
+                                                        <th>Quantity</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD06</td>
+                                                        <td><img src="img/product06.png" class="img-fluid product-image" alt="Product Image"></td>
+                                                        <td>
+                                                            <p class="m-0">Nồi áp suất elmic</p>
+                                                            <small>Category: Đồ gia dụng</small><br>
+                                                            <small>Available: 10</small>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0"><span class="text-danger">998.000đ</span></p>
+                                                            <small><del>2.090.000đ</del> -52%</small>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="form-control" value="1">
+                                                        </td>
+                                                        <td>998.000đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD07</td>
+                                                        <td><img src="img/product06.png" class="img-fluid product-image" alt="Product Image"></td>
+                                                        <td>
+                                                            <p class="m-0">Laptop Hp Victus</p>
+                                                            <small>Category: Laptop</small><br>
+                                                            <small>Available: 8</small>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0"><span class="text-danger">606.620đ</span></p>
+                                                            <small><del>650.000đ</del> -7%</small>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="form-control" value="1">
+                                                        </td>
+                                                        <td>606.620đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox"></td>
+                                                        <td>GD08</td>
+                                                        <td><img src="img/product07.png" class="img-fluid product-image" alt="Product Image"></td>
+                                                        <td>
+                                                            <p class="m-0">Ipad gen9</p>
+                                                            <small>Category: Tablet</small><br>
+                                                            <small>Available: 5</small>
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
+                                                            <small><del>3.050.000đ</del> -10%</small>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="form-control" value="0">
+                                                        </td>
+                                                        <td>0đ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="col-md-2">
-                                            <button class="btn btn-primary btn-block">Search</button>
+                                        <!-- Sub Total -->
+                                        <div class="text-right">
+                                            <p class="mb-2">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
                                         </div>
                                     </div>
-                                    <!-- Product List Table -->
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered">
-                                            <thead class="thead-light">
-                                                <tr>
-                                                    <th><input type="checkbox"></th>
-                                                    <th>ProductID</th>
-                                                    <th>Image</th>
-                                                    <th>Product</th>
-                                                    <th>Price</th>
-                                                    <th>Quantity</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><input type="checkbox" checked></td>
-                                                    <td>GD06</td>
-                                                    <td><img src="path/to/image1.jpg" class="img-fluid product-image" alt="Product Image"></td>
-                                                    <td>
-                                                        <p class="m-0">Nồi áp suất elmic</p>
-                                                        <small>Category: Đồ gia dụng</small><br>
-                                                        <small>Available: 10</small>
-                                                    </td>
-                                                    <td>
-                                                        <p class="m-0"><span class="text-danger">998.000đ</span></p>
-                                                        <small><del>2.090.000đ</del> -52%</small>
-                                                    </td>
-                                                    <td>
-                                                        <input type="number" class="form-control" value="1">
-                                                    </td>
-                                                    <td>998.000đ</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" checked></td>
-                                                    <td>GD07</td>
-                                                    <td><img src="path/to/image2.jpg" class="img-fluid product-image" alt="Product Image"></td>
-                                                    <td>
-                                                        <p class="m-0">Máy hút bụi không dây</p>
-                                                        <small>Category: Đồ gia dụng</small><br>
-                                                        <small>Available: 8</small>
-                                                    </td>
-                                                    <td>
-                                                        <p class="m-0"><span class="text-danger">606.620đ</span></p>
-                                                        <small><del>650.000đ</del> -7%</small>
-                                                    </td>
-                                                    <td>
-                                                        <input type="number" class="form-control" value="1">
-                                                    </td>
-                                                    <td>606.620đ</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox"></td>
-                                                    <td>GD08</td>
-                                                    <td><img src="path/to/image3.jpg" class="img-fluid product-image" alt="Product Image"></td>
-                                                    <td>
-                                                        <p class="m-0">Nồi cơm điện tử</p>
-                                                        <small>Category: Đồ gia dụng</small><br>
-                                                        <small>Available: 5</small>
-                                                    </td>
-                                                    <td>
-                                                        <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
-                                                        <small><del>3.050.000đ</del> -10%</small>
-                                                    </td>
-                                                    <td>
-                                                        <input type="number" class="form-control" value="0">
-                                                    </td>
-                                                    <td>0đ</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-success">Add Selected Products</button>
                                     </div>
-                                    <!-- Sub Total -->
-                                    <div class="text-right">
-                                        <p class="mb-2">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-success">Add Selected Products</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </main>
             </div>
-        </main>
-    </div>
-</div>
+        </div>
+        <%@include file="footer1.jsp" %>
+
+        <!-- jQuery Plugins -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/nouislider.min.js"></script>
+        <script src="js/jquery.zoom.min.js"></script>
+        <script src="js/main.js"></script>
 
 
-<script src="js/app.js"></script>
-<script>
-    document.querySelectorAll('.tab').forEach(tab => {
-        tab.addEventListener('click', function () {
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-            document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
-            document.getElementById(this.dataset.tab).classList.add('active');
-        });
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        setTimeout(function () {
-            if (localStorage.getItem('popState') !== 'shown') {
-                window.notyf.open({
-                    type: "success",
-                    message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
-                    duration: 10000,
-                    ripple: true,
-                    dismissible: false,
-                    position: {
-                        x: "left",
-                        y: "bottom"
-                    }
+        <script src="js/app.js"></script>
+        <script>
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function () {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+                    document.getElementById(this.dataset.tab).classList.add('active');
                 });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+                setTimeout(function () {
+                    if (localStorage.getItem('popState') !== 'shown') {
+                        window.notyf.open({
+                            type: "success",
+                            message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
+                            duration: 10000,
+                            ripple: true,
+                            dismissible: false,
+                            position: {
+                                x: "left",
+                                y: "bottom"
+                            }
+                        });
 
-                localStorage.setItem('popState', 'shown');
-            }
-        }, 15000);
-    });
-</script>
-</body>
+                        localStorage.setItem('popState', 'shown');
+                    }
+                }, 15000);
+            });
+        </script>
+    </body>
 
 </html>
