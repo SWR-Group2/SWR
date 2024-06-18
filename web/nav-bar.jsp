@@ -36,7 +36,7 @@
                                 Charles Hall
                             </a>
                             <div class="dropdown-menu dropdown-menu-start">
-                                <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+                                <a class="dropdown-item" href="userProfile.jsp"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
                                 <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings &
@@ -68,7 +68,7 @@
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                             <li class="sidebar-item"><a class="sidebar-link" href="manageUser.jsp">Manage Account</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="manageProduct.jsp">Manage Product</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="manageOrder.jsp">Manage Order</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="orderList.jsp">Manage Order</a></li>
                         </ul>
                     </li>
 
