@@ -210,7 +210,7 @@
                                 <label for="paymentMethod">Payment Method</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod1" value="Cash Payment">
-                                    <label class="form-check-label" for="paymentMethod1">Cash On Payment</label>
+                                    <label class="form-check-label" for="paymentMethod1">Cash On Delivery</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod2" value="Bank Transfer">
