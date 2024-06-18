@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login
-    Created on : Jun 13, 2024, 10:56:00 PM
+    Document   : resetPassword
+    Created on : Jun 17, 2024, 9:33:57 PM
     Author     : AD
 --%>
 
@@ -19,9 +19,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
-        <link rel="canonical" href="pages-sign-in.html" />
+        <link rel="canonical" href="pages-reset-password.html" />
 
-        <title>Sign In </title>
+        <title>Reset Password | AdminKit Demo</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
@@ -33,36 +33,11 @@
         <!-- Remove this after purchasing -->
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>
-            body {
+        <style>body {
                 opacity: 0;
             }
-
-            /* Màu sắc cho nút Facebook */
-            .facebook {
-                background-color: #3b5998;
-                color: white;
-                border: none;
-            }
-
-            .facebook:hover {
-                background-color: #2d4373;
-                color: white;
-            }
-
-            /* Màu sắc cho nút Google */
-            .google-plus {
-                background-color: #db4437;
-                color: white;
-                border: none;
-            }
-
-            .google-plus:hover {
-                background-color: #c23321;
-                color: white;
-            }
         </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <!-- END SETTINGS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
@@ -73,8 +48,7 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-120946860-10', {'anonymize_ip': true});
-        </script>
-    </head>
+        </script></head>
     <!--
       HOW TO USE: 
       data-theme: default (default), dark, light, colored
@@ -91,46 +65,26 @@
                         <div class="d-table-cell align-middle">
 
                             <div class="text-center mt-4">
-                                <h1 class="h2">Sign In Now</h1>
-                                <p class="lead">
-                                    Sign Up Your Account <a href="http://localhost:8080/SWR/signUp.jsp">Click here</a> 
-                                </p>
+                                <h1 class="h2"><strong>Password Reset</strong></h1>
+
+                                
                             </div>
 
                             <div class="card">
                                 <div class="card-body">
                                     <div class="m-sm-4">
-
                                         <form>
                                             <div class="mb-3">
-                                                <label class="form-label">Email</label>
-                                                <input class="form-control form-control-lg" type="email" name="email" />
+                                                <label class="form-label"> Your Email <a href="#" style="margin-left: 330px;">Send OTP</a> </label>
+                                                <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email" />
                                             </div>
                                             <div class="mb-3">
-                                                <label class="form-label">Password</label>
-                                                <input class="form-control form-control-lg" type="password" name="password" />
-                                                <small>
-                                                    <a href="sendOTP.jsp">Forgot password?</a>
-                                                </small>
+                                                <label class="form-label"> OTP </label>
+                                                <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter OTP " />
                                             </div>
-                                            <div>
-                                                <label class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="remember-me" name="remember-me" checked>
-                                                    <span class="form-check-label">
-                                                        Remember me !
-                                                    </span>
-                                                </label>
-                                            </div>
-                                            <div class="text-center mt-3">
-                                                <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
-                                                <!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <h6>Sign In with Social media</h6>
-                                                <div class="d-flex">
-                                                    <a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                                                    <a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i> Google</a>
-                                                </div>
+                                            <div class="text-end mt-3">
+                                                <a href="resetPass.jsp" class="btn btn-lg btn-primary" >Reset Password</a>
+                                                <!-- <button type="submit" class="btn btn-lg btn-primary">Reset password</button> -->
                                             </div>
                                         </form>
                                     </div>
@@ -144,7 +98,7 @@
         </main>
 
         <script src="js/app.js"></script>
-
+        
         <script>
             document.addEventListener("DOMContentLoaded", function (event) {
                 setTimeout(function () {
@@ -165,7 +119,6 @@
                     }
                 }, 15000);
             });
-        </script>
-    </body>
+        </script></body>
 
 </html>

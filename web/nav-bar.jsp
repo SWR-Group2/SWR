@@ -36,7 +36,7 @@
                                 Charles Hall
                             </a>
                             <div class="dropdown-menu dropdown-menu-start">
-                                <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+                                <a class="dropdown-item" href="userProfile.jsp"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
                                 <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings &
@@ -46,7 +46,7 @@
                                 <a class="dropdown-item" href="#">Log out</a>
                             </div>
 
-                            <div class="sidebar-user-subtitle">Designer</div>
+                            <div class="sidebar-user-subtitle">Manager</div>
                         </div>
                     </div>
                 </div>
@@ -56,16 +56,9 @@
                         Pages
                     </li>
                     <li class="sidebar-item">
-                        <a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                        <a class="sidebar-link" href="dashboard.jsp">
                             <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboards</span>
                         </a>
-                        <ul id="dashboards" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                            <li class="sidebar-item"><a class="sidebar-link" href="index.html">Analytics</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="dashboard-ecommerce.html">E-Commerce <span
-                                        class="sidebar-badge badge bg-primary">Pro</span></a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto <span
-                                        class="sidebar-badge badge bg-primary">Pro</span></a></li>
-                        </ul>
                     </li>
 
                     <li class="sidebar-item">
@@ -75,36 +68,15 @@
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                             <li class="sidebar-item"><a class="sidebar-link" href="manageUser.jsp">Manage Account</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="manageProduct.jsp">Manage Product</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="manageOrder.jsp">Manage Order</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="orderList.jsp">Manage Order</a></li>
                         </ul>
                     </li>
 
                     <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-profile.html">
+                        <a class="sidebar-link" href="userProfile.jsp">
                             <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
                         </a>
                     </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-invoice.html">
-                            <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="pages-tasks.html">
-                            <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tasks</span>
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
-                        </a>
-                    </li>
-
-                    <li class="sidebar-item">
-                        <a class="sidebar-link" href="calendar.html">
-                            <i class="align-middle" data-feather="calendar"></i> <span class="align-middle">Calendar</span>
-                            <span class="sidebar-badge badge bg-primary">Pro</span>
-                        </a>
-                    </li>
-
                     <li class="sidebar-item">
                         <a href="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>

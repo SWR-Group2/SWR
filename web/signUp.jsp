@@ -21,7 +21,7 @@
 
         <link rel="canonical" href="pages-sign-up.html" />
 
-        <title>Sign Up</title>
+        <title>OSS - Sign Up</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 

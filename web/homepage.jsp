@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <title>Electro - HTML Ecommerce Template</title>
+        <title>Online Shopping System</title>
 
         <!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -135,7 +135,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">15.000.000đ <del class="product-old-price">17.000.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -166,7 +166,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">10.000.000đ <del class="product-old-price">11.000.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -197,7 +197,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">7.000.000đ <del class="product-old-price">8.000.000đ</del></h4>
                                                 <div class="product-rating">
                                                 </div>
                                                 <div class="product-btns">
@@ -220,7 +220,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">2.000.000đ <del class="product-old-price">3.000.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -248,7 +248,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">1.000.000đ <del class="product-old-price">500.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -370,7 +370,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -401,7 +401,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -432,7 +432,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                                 <div class="product-rating">
                                                 </div>
                                                 <div class="product-btns">
@@ -455,7 +455,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -483,7 +483,7 @@
                                             <div class="product-body">
                                                 <p class="product-category">Category</p>
                                                 <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                                <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                                 <div class="product-rating">
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
@@ -541,7 +541,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -554,7 +554,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -567,7 +567,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
@@ -582,7 +582,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -595,7 +595,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -608,7 +608,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
@@ -634,7 +634,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -647,7 +647,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -660,7 +660,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
@@ -675,7 +675,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -688,7 +688,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -701,7 +701,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
@@ -729,7 +729,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -742,7 +742,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -755,7 +755,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
@@ -770,7 +770,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -783,7 +783,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- /product widget -->
@@ -796,7 +796,7 @@
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
-                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                        <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
                                     </div>
                                 </div>
                                 <!-- product widget -->
