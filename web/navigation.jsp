@@ -20,7 +20,7 @@
                 <div id="responsive-nav">
                     <!-- NAV -->
                     <ul class="main-nav nav navbar-nav">
-                        <li class="active"><a href="publicProducts.jsp">Home</a></li>
+                        <li class="active"><a href="homepage.jsp">Home</a></li>
                         <li><a href="publicProducts.jsp">Hot Deals</a></li>
                         <li><a href="publicProducts.jsp">Categories</a></li>
                         <li><a href="publicProducts.jsp">Laptops</a></li>

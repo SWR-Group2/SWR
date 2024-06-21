@@ -188,9 +188,10 @@
                                 </li>
                             </ul>
                         </nav>
-                        <%@ include file="footer2.jsp" %>
+                        
                     </div>
                 </main>
+                <%@ include file="footer2.jsp" %>
             </div>
         </div>
 

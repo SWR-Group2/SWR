@@ -26,16 +26,6 @@
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
         <style>
-            body {
-                opacity: 1; /* Ensure body is visible */
-                color: #000;
-                overflow-x: hidden;
-                height: 100%;
-                background-color: #8C9EFF;
-                background-repeat: no-repeat;
-                font-family: Arial, sans-serif; /* Set a consistent font-family */
-            }
-
             .d-flex {
                 display: flex;
             }

@@ -45,12 +45,6 @@
         <script src="js/settings.js"></script>
         <style>body {
                 opacity: 0;
-                color: #000;
-                overflow-x: hidden;
-                height: 100%;
-                background-color: #8C9EFF;
-                background-repeat: no-repeat;
-                margin: 0;
             }
 
             .d-flex {
