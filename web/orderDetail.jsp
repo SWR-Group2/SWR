@@ -347,7 +347,7 @@
                                                         </td>
                                                         <td><input type="number" value="1" min="1" class="form-control"></td>
                                                         <td>998.000₫</td>
-                                                        <td><button class="btn btn-outline-danger">Cancel</button></td>
+                                                        <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -366,7 +366,7 @@
                                                         </td>
                                                         <td><input type="number" value="1" min="1" class="form-control"></td>
                                                         <td>606.620₫</td>
-                                                        <td><button class="btn btn-outline-danger">Cancel</button></td>
+                                                        <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -374,9 +374,9 @@
                                             <p>Sub Total: 1.604.620₫</p>
                                             <p>Shipping Fee: <span style="color: red;">+25.000₫</span></p>
                                             <p><strong>Sub Total: 1.629.620₫</strong></p>
-                                            <button class="btn btn-pill btn-success" style="width: 85px;">Save</button>
+                                            
                                         </div>
-                                        
+                                        <button class="btn btn-pill btn-success" style="width: 85px;">Save</button>
                                     </div>
                                 </div>
                             </div>

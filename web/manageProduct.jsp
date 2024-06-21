@@ -102,7 +102,7 @@
                                             <td>250</td>
                                             <td>
                                                 <a onclick="editProduct(1)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(1)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(1)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr data-product-type="Áo">
@@ -114,7 +114,7 @@
                                             <td>199</td>
                                             <td>
                                                 <a onclick="editProduct(2)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(2)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(2)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr data-product-type="Đồng hồ">
@@ -126,7 +126,7 @@
                                             <td>1500</td>
                                             <td>
                                                 <a onclick="editProduct(3)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(3)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(3)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr data-product-type="Điện thoại">
@@ -138,7 +138,7 @@
                                             <td>670</td>
                                             <td>
                                                 <a onclick="editProduct(4)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(4)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(4)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr data-product-type="Giày">
@@ -150,7 +150,7 @@
                                             <td>19999</td>
                                             <td>
                                                 <a onclick="editProduct(5)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(5)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(5)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <tr data-product-type="Giày">
@@ -162,7 +162,7 @@
                                             <td>210</td>
                                             <td>
                                                 <a onclick="editProduct(6)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a onclick="deleteProduct(6)" data-toggle="modal" data-status="active"><i class="align-middle" data-feather="trash-2"></i></a>
+                                                <a onclick="deleteProduct(6)" data-toggle="modal" data-status="active"><i class="align-middle" style="color: red;" data-feather="trash-2"></i></a>
                                             </td>
                                         </tr>
                                         <!-- Add other rows similarly -->
