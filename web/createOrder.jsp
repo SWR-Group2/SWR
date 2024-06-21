@@ -15,7 +15,7 @@
         <link rel="canonical" href="tables-bootstrap.html" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        <title>Create Order</title>
+        <title>Online Shopping System</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -56,6 +56,13 @@
             .form-control {
                 border-radius: 0;
             }
+            select.form-control {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+                background-color: white;
+            }
             .form-check-label {
                 margin-left: 5px;
             }
@@ -73,6 +80,10 @@
             .cancel-btn:hover {
                 background-color: #c82333;
                 border-color: #bd2130;
+            }
+            img {
+                width: 100px;
+                height: auto; /* Ensure images keep their aspect ratio */
             }
         </style>
         <!-- END SETTINGS -->
@@ -112,37 +123,35 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><img src="path/to/image1.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                    <td><img src="img/product06.png" alt="Laptop"></td>
                                     <td>
-                                        <p class="m-0">Nồi áp suất elmic</p>
-                                        <small>Category: Đồ gia dụng</small><br>
-                                        <small>Available: 10</small>
+                                        <strong>Laptop Abx</strong><br>
+                                        Category: Laptop<br>
+                                        Available: 10
                                     </td>
                                     <td>
-                                        <p class="m-0"><span class="text-danger">998.000đ</span></p>
-                                        <small><del>2.090.000đ</del> -52%</small>
+                                        <span style="color: red;">998.000₫</span><br>
+                                        <span style="text-decoration: line-through;">2.090.000₫</span><br>
+                                        -52%
                                     </td>
-                                    <td>
-                                        <input type="number" class="form-control" value="1">
-                                    </td>
-                                    <td>998.000đ</td>
+                                    <td><input type="number" value="1" min="1"></td>
+                                    <td>998.000₫</td>
                                     <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
                                 </tr>
                                 <tr>
-                                    <td><img src="path/to/image2.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                    <td><img src="img/product07.png" alt="phone"></td>
                                     <td>
-                                        <p class="m-0">Máy hút bụi không dây</p>
-                                        <small>Category: Đồ gia dụng</small><br>
-                                        <small>Available: 8</small>
+                                        <strong>Smartphone</strong><br>
+                                        Category: Phone<br>
+                                        Available: 8
                                     </td>
                                     <td>
-                                        <p class="m-0"><span class="text-danger">606.620đ</span></p>
-                                        <small><del>650.000đ</del> -7%</small>
+                                        <span style="color: red;">606.620₫</span><br>
+                                        <span style="text-decoration: line-through;">650.000₫</span><br>
+                                        -7%
                                     </td>
-                                    <td>
-                                        <input type="number" class="form-control" value="1">
-                                    </td>
-                                    <td>606.620đ</td>
+                                    <td><input type="number" value="1" min="1"></td>
+                                    <td>606.620₫</td>
                                     <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
                                 </tr>
                             </tbody>
@@ -181,13 +190,18 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="status">Status</label>
-                                <input type="text" class="form-control" id="status" value="[Delivery status]">
+                                <label>Delivery Status*</label>
+                                <select id="Delivery status" class="form-control">
+                                    <option value="processing">Processing</option>
+                                    <option value="shipped">Shipped</option>
+                                    <option value="enroute">En Route</option>
+                                    <option value="arrived">Arrived</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="orderStatus">Order Status</label>
+                                <label for="orderStatus">Order Status*</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="orderStatus" id="
                                            orderStatus1" value="Verified" checked>
@@ -207,7 +221,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="paymentMethod">Payment Method</label>
+                                <label for="paymentMethod">Payment Method*</label>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod1" value="Cash Payment">
                                     <label class="form-check-label" for="paymentMethod1">Cash On Delivery</label>
@@ -223,7 +237,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="address">Address</label>
+                            <label for="address">Address*</label>
                             <input type="text" class="form-control" id="address" value="Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa, huyện Thạch Thất, Thành Phố Hà Nội">
                         </div>
                         <div class="form-group">
@@ -259,7 +273,11 @@
                             <div class="col-md-4">
                                 <select class="form-control">
                                     <option>All Categories</option>
-                                    <!-- Add more categories as options here -->
+                                    <option value="laptop">Laptop</option>
+                                    <option value="smartphone">Smartphone</option>
+                                    <option value="tablet">Tablet</option>
+                                    <option value="accessories">Accessories</option>
+                                    <option value="software">Software</option>
                                 </select>
                             </div>
                             <div class="col-md-6">
@@ -287,55 +305,51 @@
                                     <tr>
                                         <td><input type="checkbox" checked></td>
                                         <td>GD06</td>
-                                        <td><img src="path/to/image1.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                        <td><img src="img/product06.png" alt="Laptop"></td>
                                         <td>
-                                            <p class="m-0">Nồi áp suất elmic</p>
-                                            <small>Category: Đồ gia dụng</small><br>
-                                            <small>Available: 10</small>
+                                            <strong>Laptop Abx</strong><br>
+                                            Category: Laptop<br>
+                                            Available: 10
                                         </td>
                                         <td>
-                                            <p class="m-0"><span class="text-danger">998.000đ</span></p>
-                                            <small><del>2.090.000đ</del> -52%</small>
+                                            <span style="color: red;">998.000₫</span><br>
+                                            <span style="text-decoration: line-through;">2.090.000₫</span><br>
+                                            -52%
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control" value="1">
-                                        </td>
-                                        <td>998.000đ</td>
+                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>998.000₫</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox" checked></td>
                                         <td>GD07</td>
-                                        <td><img src="path/to/image2.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                        <td><img src="img/product07.png" alt="phone"></td>
                                         <td>
-                                            <p class="m-0">Máy hút bụi không dây</p>
-                                            <small>Category: Đồ gia dụng</small><br>
-                                            <small>Available: 8</small>
+                                            <strong>Smartphone</strong><br>
+                                            Category: Phone<br>
+                                            Available: 8
                                         </td>
                                         <td>
-                                            <p class="m-0"><span class="text-danger">606.620đ</span></p>
-                                            <small><del>650.000đ</del> -7%</small>
+                                            <span style="color: red;">606.620₫</span><br>
+                                            <span style="text-decoration: line-through;">650.000₫</span><br>
+                                            -7%
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control" value="1">
-                                        </td>
-                                        <td>606.620đ</td>
+                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>606.620₫</td>
                                     </tr>
                                     <tr>
                                         <td><input type="checkbox"></td>
                                         <td>GD08</td>
                                         <td><img src="path/to/image3.jpg" class="img-fluid product-image" alt="Product Image"></td>
                                         <td>
-                                            <p class="m-0">Nồi cơm điện tử</p>
-                                            <small>Category: Đồ gia dụng</small><br>
-                                            <small>Available: 5</small>
+                                            <strong class="m-0">IPad</strong><br>
+                                            Category: Table<br>
+                                            Available: 5
                                         </td>
                                         <td>
                                             <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
                                             <small><del>3.050.000đ</del> -10%</small>
                                         </td>
-                                        <td>
-                                            <input type="number" class="form-control" value="0">
-                                        </td>
+                                        <td><input type="number" value="0" min="0"></td>
                                         <td>0đ</td>
                                     </tr>
                                 </tbody>
