@@ -101,161 +101,174 @@
         <div class="wrapper">
             <%@ include file="nav-bar.jsp" %>
             <div class="main">
-                <%@ include file="header2.jsp" %>
-                <div class="container-fluid">
-                    <h1 class="mt-4">New Order</h1>
-                    <div class="text-right mb-3">
-                        <a href="#selectProductModal" class="btn btn-success" data-toggle="modal">
-                            <i class="material-icons">&#xE147;</i> <span>Select more Product</span>
-                        </a>
+                <%@ include file="header2.jsp"%>
+                <main class="content">
+                    <div class="container-fluid p-0" style="margin: 20px;">
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1 class="h3 mb-3">New Order</h1>
+                                </div>
+                                <div class="text-right mb-3">
+                                    <a href="#selectProductModal" class="btn btn-pill btn-success float-right" data-toggle="modal">
+                                        Select more Product
+                                    </a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Product</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th>Amount</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img src="img/product06.png" alt="Laptop"></td>
+                                                <td>
+                                                    <strong>Laptop Abx</strong><br>
+                                                    Category: Laptop<br>
+                                                    Available: 10
+                                                </td>
+                                                <td>
+                                                    <span style="color: red;">998.000₫</span><br>
+                                                    <span style="text-decoration: line-through;">2.090.000₫</span><br>
+                                                    -52%
+                                                </td>
+                                                <td><input type="number" value="1" min="1"></td>
+                                                <td>998.000₫</td>
+                                                <td><i class="align-middle" data-feather="trash-2" style="color: red;"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="img/product07.png" alt="phone"></td>
+                                                <td>
+                                                    <strong>Smartphone</strong><br>
+                                                    Category: Phone<br>
+                                                    Available: 8
+                                                </td>
+                                                <td>
+                                                    <span style="color: red;">606.620₫</span><br>
+                                                    <span style="text-decoration: line-through;">650.000₫</span><br>
+                                                    -7%
+                                                </td>
+                                                <td><input type="number" value="1" min="1"></td>
+                                                <td>606.620₫</td>
+                                                <td><i class="align-middle" data-feather="trash-2" style="color: red;"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="fullName">Full Name*</label>
+                                            <input type="text" class="form-control" id="fullName" value="Đỗ Bá Thuật">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="cityProvince">City/Province</label>
+                                            <input type="text" class="form-control" id="cityProvince" value="Hà Nội">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="email">Email*</label>
+                                            <input type="email" class="form-control" id="email" value="Thuatnqb@fpt.edu.vn">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="phoneNumber">Phone Number*</label>
+                                            <input type="text" class="form-control" id="phoneNumber" value="0123456789">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="district">District</label>
+                                            <input type="text" class="form-control" id="district" value="Thạch Thất">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="wards">Wards</label>
+                                            <input type="text" class="form-control" id="wards" value="Thạch Hòa">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Delivery Status*</label>
+                                            <select id="Delivery status" class="form-control">
+                                                <option value="processing">Processing</option>
+                                                <option value="shipped">Shipped</option>
+                                                <option value="enroute">En Route</option>
+                                                <option value="arrived">Arrived</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="orderStatus">Order Status*</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="orderStatus" id="
+                                                       orderStatus1" value="Verified" checked>
+                                                <label class="form-check-label" for="orderStatus1">Verified</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus2" value="Paid">
+                                                <label class="form-check-label" for="orderStatus2">Paid</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus3" value="Shipped">
+                                                <label class="form-check-label" for="orderStatus3">Shipped</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus4" value="Shipping">
+                                                <label class="form-check-label" for="orderStatus4">Shipping</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="paymentMethod">Payment Method*</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod1" value="Cash Payment">
+                                                <label class="form-check-label" for="paymentMethod1">Cash On Delivery</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod2" value="Bank Transfer">
+                                                <label class="form-check-label" for="paymentMethod2">Bank Transfer</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod3" value="Internet Banking" checked>
+                                                <label class="form-check-label" for="paymentMethod3">Internet Banking</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address">Address*</label>
+                                        <input type="text" class="form-control" id="address" value="Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa, huyện Thạch Thất, Thành Phố Hà Nội">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="deliveryNote">Delivery Note</label>
+                                        <textarea class="form-control" id="deliveryNote" rows="3">Cần giao sớm trước 1/12/2024</textarea>
+                                    </div>
+                                    <div class="order-summary mt-4">
+                                        <p>Sub Total: <span>1.604.620đ</span></p>
+                                        <p>Shipping Fee: <span class="price">+25.000đ</span></p>
+                                        <p class="order-summary">Sub Total: <span>1.629.620đ</span></p>
+                                    </div>
+                                    <div class="form-group text-md-start">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="table-responsive">
-                        <table class="table table-bordered">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Image</th>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Amount</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="img/product06.png" alt="Laptop"></td>
-                                    <td>
-                                        <strong>Laptop Abx</strong><br>
-                                        Category: Laptop<br>
-                                        Available: 10
-                                    </td>
-                                    <td>
-                                        <span style="color: red;">998.000₫</span><br>
-                                        <span style="text-decoration: line-through;">2.090.000₫</span><br>
-                                        -52%
-                                    </td>
-                                    <td><input type="number" value="1" min="1"></td>
-                                    <td>998.000₫</td>
-                                    <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><img src="img/product07.png" alt="phone"></td>
-                                    <td>
-                                        <strong>Smartphone</strong><br>
-                                        Category: Phone<br>
-                                        Available: 8
-                                    </td>
-                                    <td>
-                                        <span style="color: red;">606.620₫</span><br>
-                                        <span style="text-decoration: line-through;">650.000₫</span><br>
-                                        -7%
-                                    </td>
-                                    <td><input type="number" value="1" min="1"></td>
-                                    <td>606.620₫</td>
-                                    <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="fullName">Full Name*</label>
-                                <input type="text" class="form-control" id="fullName" value="Đỗ Bá Thuật">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="cityProvince">City/Province</label>
-                                <input type="text" class="form-control" id="cityProvince" value="Hà Nội">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="email">Email*</label>
-                                <input type="email" class="form-control" id="email" value="Thuatnqb@fpt.edu.vn">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="phoneNumber">Phone Number*</label>
-                                <input type="text" class="form-control" id="phoneNumber" value="0123456789">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="district">District</label>
-                                <input type="text" class="form-control" id="district" value="Thạch Thất">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="wards">Wards</label>
-                                <input type="text" class="form-control" id="wards" value="Thạch Hòa">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label>Delivery Status*</label>
-                                <select id="Delivery status" class="form-control">
-                                    <option value="processing">Processing</option>
-                                    <option value="shipped">Shipped</option>
-                                    <option value="enroute">En Route</option>
-                                    <option value="arrived">Arrived</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="orderStatus">Order Status*</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="orderStatus" id="
-                                           orderStatus1" value="Verified" checked>
-                                    <label class="form-check-label" for="orderStatus1">Verified</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus2" value="Paid">
-                                    <label class="form-check-label" for="orderStatus2">Paid</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus3" value="Shipped">
-                                    <label class="form-check-label" for="orderStatus3">Shipped</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="orderStatus" id="orderStatus4" value="Shipping">
-                                    <label class="form-check-label" for="orderStatus4">Shipping</label>
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="paymentMethod">Payment Method*</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod1" value="Cash Payment">
-                                    <label class="form-check-label" for="paymentMethod1">Cash On Delivery</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod2" value="Bank Transfer">
-                                    <label class="form-check-label" for="paymentMethod2">Bank Transfer</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="paymentMethod" id="paymentMethod3" value="Internet Banking" checked>
-                                    <label class="form-check-label" for="paymentMethod3">Internet Banking</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address*</label>
-                            <input type="text" class="form-control" id="address" value="Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa, huyện Thạch Thất, Thành Phố Hà Nội">
-                        </div>
-                        <div class="form-group">
-                            <label for="deliveryNote">Delivery Note</label>
-                            <textarea class="form-control" id="deliveryNote" rows="3">Cần giao sớm trước 1/12/2024</textarea>
-                        </div>
-                        <div class="order-summary mt-4">
-                            <p>Sub Total: <span>1.604.620đ</span></p>
-                            <p>Shipping Fee: <span class="price">+25.000đ</span></p>
-                            <p class="order-summary">Sub Total: <span>1.629.620đ</span></p>
-                        </div>
-                        <div class="form-group text-md-start">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                </main>
+                <%@ include file="footer2.jsp"%>
+
             </div>
+
         </div>
+
 
         <!-- Select Product Modal -->
         <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">

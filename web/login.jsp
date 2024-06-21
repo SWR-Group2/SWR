@@ -122,7 +122,7 @@
                                                 </label>
                                             </div>
                                             <div class="text-center mt-3">
-                                                <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
+                                                <a href="homepage.jsp" class="btn btn-lg btn-primary">Sign in</a>
                                                 <!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
                                             </div>
                                             <div class="col-lg-12">

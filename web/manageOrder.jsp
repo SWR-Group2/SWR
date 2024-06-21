@@ -99,9 +99,7 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <button type="button" class="btn btn-square btn-success float-right" data-toggle="modal" data-target="#createUserModal">
-                                        New Order
-                                    </button>
+                                    <a class="btn btn-square btn-success float-right" href="createOrder.jsp">New Order</a>
                                 </div>
                                 <table class="table">
                                     <thead>
@@ -129,7 +127,7 @@
                                             <td>Submitted</td>
                                             <td class="table-action">
                                                 <a href="orderDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a href="orderDetail.jsp"><i class="align-middle" data-feather="x-circle"></i></a>
+                                                <a href=""><i class="align-middle" data-feather="x-circle" style="color: red;"></i></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -143,7 +141,7 @@
                                             <td>Verified</td>
                                             <td class="table-action">
                                                 <a href="orderDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a href="orderDetail.jsp"><i class="align-middle" data-feather="x-circle"></i></a>
+                                                <a href=""><i class="align-middle" data-feather="x-circle" style="color: red;"></i></a>
 
                                             </td>
                                         </tr>
@@ -158,7 +156,7 @@
                                             <td>Submitted</td>
                                             <td class="table-action">
                                                 <a href="orderDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
-                                                <a href="orderDetail.jsp"><i class="align-middle" data-feather="x-circle"></i></a>
+                                                <a href=""><i class="align-middle" data-feather="x-circle" style="color: red;"></i></a>
 
                                             </td>
                                         </tr>
