@@ -27,7 +27,12 @@
 
         <!-- nouislider -->
         <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
-
+        <style>
+            .primary-btn {
+                width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của phần tử cha */
+                margin-bottom: 10px; /* Khoảng cách giữa các nút */
+            }
+        </style>
         <!-- Font Awesome Icon -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -296,22 +301,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -329,22 +322,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -361,17 +342,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -388,17 +362,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -415,17 +382,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -440,22 +400,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -472,22 +420,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -502,17 +438,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
@@ -529,17 +458,10 @@
                                         <p class="product-category">Category</p>
                                         <h3 class="product-name"><a href="publicProduct.jsp">product name goes here</a></h3>
                                         <h4 class="product-price">400.000đ <del class="product-old-price">600.000đ</del></h4>
-                                        <div class="product-rating">
-                                        </div>
-                                        <div class="product-btns">
-                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-                                            <button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-                                        </div>
+                                        <button class="primary-btn order-submit"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        <button class="primary-btn order-submit"><i class=""></i> Buy Now</button>
                                     </div>
-                                    <div class="add-to-cart">
-                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    </div>
+
                                 </div>
                             </div>
                             <!-- /product -->
