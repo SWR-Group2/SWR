@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : Jun 13, 2024, 10:56:00 PM
-    Author     : AD
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,67 +15,18 @@
 
         <link rel="canonical" href="pages-sign-in.html" />
 
-        <title>Sign In </title>
+        <title>Sign In</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
-        <!-- Choose your prefered color scheme -->
-        <!-- <link href="css/light.css" rel="stylesheet"> -->
-        <!-- <link href="css/dark.css" rel="stylesheet"> -->
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- BEGIN SETTINGS -->
-        <!-- Remove this after purchasing -->
+        <!-- Custom CSS -->
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>
-            body {
-                opacity: 0;
-            }
-
-            /* Màu sắc cho nút Facebook */
-            .facebook {
-                background-color: #3b5998;
-                color: white;
-                border: none;
-            }
-
-            .facebook:hover {
-                background-color: #2d4373;
-                color: white;
-            }
-
-            /* Màu sắc cho nút Google */
-            .google-plus {
-                background-color: #db4437;
-                color: white;
-                border: none;
-            }
-
-            .google-plus:hover {
-                background-color: #c23321;
-                color: white;
-            }
-        </style>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- END SETTINGS -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-120946860-10', {'anonymize_ip': true});
-        </script>
     </head>
-    <!--
-      HOW TO USE: 
-      data-theme: default (default), dark, light, colored
-      data-layout: fluid (default), boxed
-      data-sidebar-position: left (default), right
-      data-sidebar-layout: default (default), compact
-    -->
 
     <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
         <main class="d-flex w-100 h-100">
@@ -93,14 +38,13 @@
                             <div class="text-center mt-4">
                                 <h1 class="h2">Sign In Now</h1>
                                 <p class="lead">
-                                    Sign Up Your Account <a href="http://localhost:8080/SWR/signUp.jsp">Click here</a> 
+                                    Sign Up Your Account <a href="http://localhost:8080/SWR/signUp.jsp">Click here</a>
                                 </p>
                             </div>
 
                             <div class="card">
                                 <div class="card-body">
                                     <div class="m-sm-4">
-
                                         <form>
                                             <div class="mb-3">
                                                 <label class="form-label">Email</label>
@@ -110,27 +54,13 @@
                                                 <label class="form-label">Password</label>
                                                 <input class="form-control form-control-lg" type="password" name="password" />
                                                 <small>
-                                                    <a href="sendOTP.jsp">Forgot password?</a>
+                                                    <a href="#" data-toggle="modal" data-target="#passwordResetModal">Forgot password?</a>
                                                 </small>
                                             </div>
-                                            <div>
-                                                <label class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="remember-me" name="remember-me" checked>
-                                                    <span class="form-check-label">
-                                                        Remember me !
-                                                    </span>
-                                                </label>
-                                            </div>
+
                                             <div class="text-center mt-3">
                                                 <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
                                                 <!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <h6>Sign In with Social media</h6>
-                                                <div class="d-flex">
-                                                    <a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                                                    <a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i> Google</a>
-                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -143,29 +73,119 @@
             </div>
         </main>
 
+        <!-- Password Reset Modal -->
+        <div class="modal fade" id="passwordResetModal" tabindex="-1" role="dialog" aria-labelledby="passwordResetModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="passwordResetModalLabel">Send OTP</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="resetPasswordForm">
+                            <div class="mb-3">
+                                <label class="form-label d-flex justify-content-between">Your Email <a href="#" onclick="sendOTP()">Send OTP</a></label>
+                                <input class="form-control form-control-lg" type="email" name="email" id="resetEmail" placeholder="Enter your email" required />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">OTP</label>
+                                <input class="form-control form-control-lg" type="text" name="otp" id="otp" placeholder="Enter OTP" required />
+                            </div>
+                            <div class="text-end mt-3">
+                                <a href="#" class="btn btn-lg btn-primary" onclick="showUpdatePasswordModal()">Reset Password</a>
+                                <!-- <button type="submit" class="btn btn-lg btn-primary">Reset password</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Update Password Modal -->
+        <div class="modal fade" id="updatePasswordModal" tabindex="-1" role="dialog" aria-labelledby="updatePasswordModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="updatePasswordModalLabel">Update Password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="updatePasswordForm">
+                            <div class="mb-3">
+                                <label class="form-label">New Password</label>
+                                <input class="form-control form-control-lg" type="password" id="newPassword" name="newPassword" placeholder="Enter new password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password Confirmation</label>
+                                <input class="form-control form-control-lg" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm new password" required>
+                            </div>
+                            <div class="text-end mt-3">
+                                <button type="button" class="btn btn-lg btn-primary" onclick="updatePassword()">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
         <script src="js/app.js"></script>
 
         <script>
-            document.addEventListener("DOMContentLoaded", function (event) {
-                setTimeout(function () {
-                    if (localStorage.getItem('popState') !== 'shown') {
-                        window.notyf.open({
-                            type: "success",
-                            message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
-                            duration: 10000,
-                            ripple: true,
-                            dismissible: false,
-                            position: {
-                                x: "left",
-                                y: "bottom"
-                            }
-                        });
+                                    $(document).ready(function () {
+                                        // Function to handle modal hiding
+                                        $('#updatePasswordModal').on('hidden.bs.modal', function (e) {
+                                            // Perform any cleanup or reset actions here if needed
+                                        });
+                                    });
 
-                        localStorage.setItem('popState', 'shown');
-                    }
-                }, 15000);
-            });
+                                    function sendOTP() {
+                                        const email = document.getElementById('resetEmail').value;
+                                        if (email) {
+                                            // Logic to send OTP to the provided email
+                                            console.log(`OTP sent to ${email}`);
+                                            // You can replace the above console.log with an AJAX call to your server to send the OTP
+                                        } else {
+                                            alert('Please enter your email.');
+                                        }
+                                    }
+
+                                    function showUpdatePasswordModal() {
+                                        // Close the current modal
+                                        $('#passwordResetModal').modal('hide');
+                                        // Show the update password modal
+                                        $('#updatePasswordModal').modal('show');
+                                    }
+
+                                    // Ensure the update password modal can be closed with the close button
+                                    $('#updatePasswordModal').on('click', '[data-dismiss="modal"]', function () {
+                                        $('#updatePasswordModal').modal('hide');
+                                    });
+
+                                    function updatePassword() {
+                                        var newPassword = document.getElementById('newPassword').value;
+                                        var confirmPassword = document.getElementById('confirmPassword').value;
+
+                                        if (newPassword !== confirmPassword) {
+                                            alert("Passwords do not match. Please check again.");
+                                            return;
+                                        }
+
+                                        // Perform update password logic here
+                                        console.log("New password: " + newPassword);
+                                    }
+
         </script>
+
     </body>
 
 </html>

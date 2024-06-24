@@ -102,17 +102,14 @@
                                     <div class="m-sm-4">
                                         <form>
                                             <div class="mb-3">
-                                                <label class="form-label"> Your Name</label>
+                                                <label class="form-label"> Full Name</label>
                                                 <input class="form-control form-control-lg" type="text" name="name" placeholder="Enter your name." />
                                             </div>                            
                                             <div class="mb-3">
                                                 <label class="form-label">Email</label>
                                                 <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email." />
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label">Phone Number</label>
-                                                <input class="form-control form-control-lg" type="text" name="phoneNumber" placeholder="Enter your phone number." />
-                                            </div>
+                                            
                                             <div class="mb-3">
                                                 <label class="form-label">Password</label>
                                                 <input class="form-control form-control-lg" type="password" name="password" placeholder="Enter password." />
@@ -121,32 +118,12 @@
                                                 <label class="form-label"> Confirm Password</label>
                                                 <input class="form-control form-control-lg" type="password" name="confirmPassword" placeholder="Confirm password." />
                                             </div>
-                                            <div class="form-group">
-                                                <input class="" type="checkbox" 
-                                                       value="terms-and-conditions" name="iAgree"
-                                                       id="iAgree" required>
-                                                <label class="form-check-label text-secondary fs-5" for="iAgree" style="font-weight: 400;" >
-                                                    I agree to the <a href="#!"
-                                                                      class="link-primary text-decoration-none text-info">
-                                                        terms and conditions!
-                                                    </a>
-                                                </label>
-                                            </div>
-                                            <div class="col-lg-12 m-b30">
-                                                <div class="g-recaptcha" data-sitekey="6LclxPQpAAAAALAIzyzMH1wx8hB8Rf6pusVeI7lg"></div>
-                                                <div style="color: red" id="error"></div>
-                                            </div>
+                                           
                                             <div class="text-center mt-3">
                                                 <a href="index.html" class="btn btn-lg btn-primary">Sign up</a>
                                                 <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
                                             </div>
-                                            <div class="col-lg-12">
-                                                <h6>Register with Social media</h6>
-                                                <div class="d-flex">
-                                                    <a class="btn flex-fill m-r5 facebook" href="#"><i class="fa fa-facebook"></i> Facebook</a>
-                                                    <a class="btn flex-fill m-l5 google-plus" href="#"><i class="fa fa-google-plus"></i> Google</a>
-                                                </div>
-                                            </div>
+                                           
                                         </form>
                                     </div>
                                 </div>
