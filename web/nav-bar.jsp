@@ -13,10 +13,9 @@
     <body>
         <nav id="sidebar" class="sidebar js-sidebar">
             <div class="sidebar-content js-simplebar">
-                <a class="sidebar-brand" href="index.html">
+                <a class="sidebar-brand" href="dashboard.jsp">
                     <span class="sidebar-brand-text align-middle">
-                        Manage
-                        <sup><small class="badge bg-primary text-uppercase">Pro</small></sup>
+                        <img src="./img/logo.png" alt="" >
                     </span>
                     <svg class="sidebar-brand-icon align-middle" width="32px" height="32px" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5"
                          stroke-linecap="square" stroke-linejoin="miter" color="#FFFFFF" style="margin-left: -3px">
@@ -68,7 +67,7 @@
                         <ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                             <li class="sidebar-item"><a class="sidebar-link" href="manageUser.jsp">Manage Account</a></li>
                             <li class="sidebar-item"><a class="sidebar-link" href="manageProduct.jsp">Manage Product</a></li>
-                            <li class="sidebar-item"><a class="sidebar-link" href="orderList.jsp">Manage Order</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="manageOrder.jsp">Manage Order</a></li>
                         </ul>
                     </li>
 

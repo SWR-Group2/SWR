@@ -45,7 +45,7 @@
                         <!-- SEARCH BAR -->
                         <div class="col-md-6">
                             <div class="header-search">
-                                <form>
+                                <form action="publicProducts.jsp">
                                     <select class="input-select">
                                         <option value="0">All Categories</option>
                                         <option value="1">Category 01</option>
@@ -115,7 +115,7 @@
                                         <a href="dashboard.jsp">DashBoard</a><br>
                                         <a href="login.jsp">Login</a><br>
                                         <a href="signUp.jsp">Register</a><br>
-                                        <a href="#">My Order</a><br>
+                                        <a href="orderHistory.jsp">My Order</a><br>
                                         <a href="#">Logout</a><br>
                                     </div>
                                 </div>

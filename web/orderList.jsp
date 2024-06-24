@@ -16,7 +16,7 @@
         <link rel="canonical" href="tables-bootstrap.html" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        <title>Order List</title>
+        <title>Online Shopping System</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
@@ -39,6 +39,13 @@
             }
             .mr-2 {
                 margin-right: 8px;
+            }
+            select.form-control {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
+                background-color: white;
             }
         </style>
         <!-- END SETTINGS -->
@@ -122,7 +129,7 @@
                                     <td>Submitted</td>
                                     <td><a href="orderDetails.jsp" class="view" title="View" data-toggle="modal"><i class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <i class="material-icons">&#xE872;</i>
+                                            <i class="material-icons" style="color: red">&#xE872;</i>
                                         </a>
                                     </td>
                                 </tr>
@@ -137,7 +144,7 @@
                                     <td>Verified</td>
                                     <td><a href="orderDetails.jsp" class="view" title="View" data-toggle="modal"><i class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <i class="material-icons">&#xE872;</i>
+                                            <i class="material-icons" style="color: red">&#xE872;</i>
                                         </a>
                                     </td>
                                 </tr>
@@ -152,7 +159,7 @@
                                     <td>Submitted</td>
                                     <td><a href="orderDetails.jsp" class="view" title="View" data-toggle="modal"><i class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <i class="material-icons">&#xE872;</i>
+                                            <i class="material-icons" style="color: red">&#xE872;</i>
                                         </a>
                                     </td>
                                 </tr>
@@ -167,7 +174,7 @@
                                     <td>Paid</td>
                                     <td><a href="orderDetails.jsp" class="view" title="View" data-toggle="modal"><i class="material-icons">&#xE417;</i></a>
                                         <a href="#" class="delete" title="Delete" data-toggle="tooltip">
-                                            <i class="material-icons">&#xE872;</i>
+                                            <i class="material-icons" style="color: red">&#xE872;</i>
                                         </a>
                                     </td>
                                 </tr>
@@ -188,9 +195,10 @@
                                 </li>
                             </ul>
                         </nav>
-                        <%@ include file="footer2.jsp" %>
+                        
                     </div>
                 </main>
+                <%@ include file="footer2.jsp" %>
             </div>
         </div>
 

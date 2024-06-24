@@ -26,16 +26,6 @@
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
         <style>
-            body {
-                opacity: 1; /* Ensure body is visible */
-                color: #000;
-                overflow-x: hidden;
-                height: 100%;
-                background-color: #8C9EFF;
-                background-repeat: no-repeat;
-                font-family: Arial, sans-serif; /* Set a consistent font-family */
-            }
-
             .d-flex {
                 display: flex;
             }
@@ -273,6 +263,10 @@
                 padding: 10px 20px;
                 margin-top: 20px;
             }
+            .table th, .table td {
+                vertical-align: middle;
+                text-align: center;
+            }
         </style>
         <!-- END SETTINGS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
@@ -391,13 +385,13 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <label for="address">Address</label>
+                                            <label for="address">Address*</label>
                                             <input type="text" id="address" name="address" class="form-control" value="Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa huyện Thạch Thất Thành Phố Hà Nội">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label for="order-status">Order Status</label>
+                                            <label for="order-status">Order Status*</label>
                                             <div>
                                                 <input type="radio" id="status-verified" name="order-status" value="verified">
                                                 <label for="status-verified">Verified</label>
@@ -425,7 +419,7 @@
                         <div class="tab-content" id="products-details">
                             <!-- Products Details Content -->
                             <h2>Products Details</h2>
-                            <table>
+                            <table class="product-table table">
                                 <thead>
                                     <tr>
                                         <th>Image</th>
@@ -438,10 +432,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><img src="path/to/image1.jpg" alt="Nồi áp suất elmic"></td>
+                                        <td><img src="img/product06.png" alt="Laptop"></td>
                                         <td>
-                                            <strong>Nồi áp suất elmic</strong><br>
-                                            Category: Đồ gia dụng<br>
+                                            <strong>Laptop Abx</strong><br>
+                                            Category: Laptop<br>
                                             Available: 10
                                         </td>
                                         <td>
@@ -451,13 +445,13 @@
                                         </td>
                                         <td><input type="number" value="1" min="1"></td>
                                         <td>998.000₫</td>
-                                        <td><button class="cancel-btn">Cancel</button></td>
+                                        <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
                                     </tr>
                                     <tr>
-                                        <td><img src="path/to/image2.jpg" alt="Máy hút bụi không dây"></td>
+                                        <td><img src="img/product07.png" alt="phone"></td>
                                         <td>
-                                            <strong>Máy hút bụi không dây</strong><br>
-                                            Category: Đồ gia dụng<br>
+                                            <strong>Smartphone</strong><br>
+                                            Category: Phone<br>
                                             Available: 8
                                         </td>
                                         <td>
@@ -467,7 +461,7 @@
                                         </td>
                                         <td><input type="number" value="1" min="1"></td>
                                         <td>606.620₫</td>
-                                        <td><button class="cancel-btn">Cancel</button></td>
+                                        <td><button class="btn btn-danger cancel-btn"><i class="material-icons">&#xE872;</i></button></td>
                                     </tr>
                                 </tbody>
                             </table>
