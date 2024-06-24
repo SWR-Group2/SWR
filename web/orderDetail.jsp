@@ -190,8 +190,8 @@
             <div class="main">
                 <%@include file="header2.jsp" %>
                 <main class="content">
-                    <div class="container-fluid p-0">
-                        <h1 class="h3 mb-3">Manage Account</h1>
+                    <div class="container p-0">
+                        <h1 class="h3 mb-3">Order Detail</h1>
                         <div class="row">
                             <div class="tab">
                                 <ul class="nav nav-tabs" role="tablist">
