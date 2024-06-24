@@ -18,7 +18,7 @@
 
         <link rel="canonical" href="tables-bootstrap.html" />
 
-        <title>Online Shopping System</title>
+        <title>OSS - Manage Account</title>
 
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap JS and dependencies -->
@@ -103,7 +103,6 @@
             </div>
         </div>
 
-        <!-- Edit User Modal -->
         <!-- Edit User Modal -->
         <div class="modal fade" id="editUserModal">
             <div class="modal-dialog">
@@ -205,7 +204,7 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <button type="button" class="btn btn-square btn-success" data-toggle="modal" data-target="#createUserModal">
+                                    <button type="button" class="btn btn-square btn-success float-right" data-toggle="modal" data-target="#createUserModal">
                                         New Account
                                     </button>
                                 </div>
@@ -230,7 +229,7 @@
                                             <th>Active</th>
                                             <th>WareHouse Staff</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="1" data-name="Vanessa Tucker" data-email="vanser@gmail.com" data-role="guest" data-status="active"><i class="align-middle" data-feather="edit-2"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="1" data-name="Vanessa Tucker" data-email="vanser@gmail.com" data-role="guest" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
                                                     <label class="custom-control-label" for="customSwitch1"></label>
@@ -245,7 +244,7 @@
                                             <th>Inactive</th>
                                             <th>User</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="2" data-name="William Harris" data-email="william@gmail.com" data-role="user" data-status="inactive"><i class="align-middle" data-feather="edit-2"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="2" data-name="William Harris" data-email="william@gmail.com" data-role="user" data-status="inactive"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch2">
                                                     <label class="custom-control-label" for="customSwitch2"></label>
@@ -260,7 +259,7 @@
                                             <th>Active</th>
                                             <th>User</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="3" data-name="Sharon Lessman" data-email="sharon@gmail.com" data-role="user" data-status="active"><i class="align-middle" data-feather="edit-2"></i></a>
+                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="3" data-name="Sharon Lessman" data-email="sharon@gmail.com" data-role="user" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
                                                     <label class="custom-control-label" for="customSwitch3"></label>
@@ -271,6 +270,17 @@
                                 </table>
                             </div>
                         </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </main>
                 <%@include file="footer2.jsp" %>
