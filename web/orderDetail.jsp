@@ -174,6 +174,9 @@
                 max-width: 50px;
                 text-align: center;
             }
+            .table img{
+                max-width: 80px;
+            }
         </style>
         <!-- END SETTINGS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
@@ -328,6 +331,9 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane" id="tab-3" role="tabpanel">
+                                        <a href="#selectProductModal" class="btn btn-pill btn-success float-right" style="font-size: 16px" data-toggle="modal">
+                                            Select more Product
+                                        </a>
                                         <table class="table table-striped table-hover">
                                             <thead>
                                                 <tr>
@@ -406,6 +412,146 @@
 
                                         </div>
                                         <button class="btn btn-pill btn-success" style="width: 85px;">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Select Product Modal -->
+                        <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="selectProductModalLabel">Product Selection</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Filter and Search Section -->
+                                        <div class="form-row mb-3">
+                                            <div class="col-md-4" >
+                                                <select class="form-select" style="font-size: 13px">
+                                                    <option>All Categories</option>
+                                                    <option value="laptop">Laptop</option>
+                                                    <option value="smartphone">Smartphone</option>
+                                                    <option value="tablet">Tablet</option>
+                                                    <option value="accessories">Accessories</option>
+                                                    <option value="software">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input style="font-size: 13px" type="text" class="form-control" placeholder="Enter key word to search">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button style="font-size: 13px;margin-top: 1px"  class="btn btn-primary btn-block">Search</button>
+                                            </div>
+                                        </div>
+                                        <!-- Product List Table -->
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th><input type="checkbox"></th>
+                                                        <th>ProductID</th>
+                                                        <th>Image</th>
+                                                        <th>Product</th>
+                                                        <th>Price</th>
+                                                        <th>Quantity</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD06</td>
+                                                        <td><img src="img/product06.png" alt="Laptop"></td>
+                                                        <td>
+                                                            <strong>Laptop Abx</strong><br>
+                                                            Category: Laptop<br>
+                                                            Available: 10
+                                                        </td>
+                                                        <td>
+                                                            <span style="color: red;">998.000₫</span><br>
+                                                            <span style="text-decoration: line-through;">2.090.000₫</span><br>
+                                                            -52%
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus1">-</button>
+                                                                </div>
+                                                                <input id="quantity1" type="text" value="1" min="1" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus1">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>998.000₫</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD07</td>
+                                                        <td><img src="img/product07.png" alt="phone"></td>
+                                                        <td>
+                                                            <strong>Smartphone</strong><br>
+                                                            Category: Phone<br>
+                                                            Available: 8
+                                                        </td>
+                                                        <td>
+                                                            <span style="color: red;">606.620₫</span><br>
+                                                            <span style="text-decoration: line-through;">650.000₫</span><br>
+                                                            -7%
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus2">-</button>
+                                                                </div>
+                                                                <input id="quantity2" type="text" value="1" min="0" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus2">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>606.620₫</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox"></td>
+                                                        <td>GD08</td>
+                                                        <td><img src="path/to/image3.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                                        <td>
+                                                            <strong class="m-0">IPad</strong><br>
+                                                            Category: Table<br>
+                                                            Available: 5
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
+                                                            <small><del>3.050.000đ</del> -10%</small>
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus3">-</button>
+                                                                </div>
+                                                                <input id="quantity3" type="text" value="0" min="0" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus3">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>0đ</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!-- Sub Total -->
+                                        <div class="text-right">
+                                            <p class="mb-2">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-success">Add Selected Products</button>
                                     </div>
                                 </div>
                             </div>
