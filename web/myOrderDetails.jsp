@@ -171,6 +171,37 @@
             height: auto;
             display: block;
         }
+        .container{
+            font-size: 16px;
+        }
+        .h5,h5{
+            font-size: 16px
+        }
+        .form-control{
+            font-size: 16px;
+        }
+        [type=submit]:not(:disabled), button:not(:disabled){
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        textarea.form-control{
+            font-size: 16px;
+        }
+        .tab .nav-tabs .nav-link{
+            font-size: 18px;
+        }
+        .quantity-input {
+            max-width: 50px;
+            text-align: center;
+        }
+        img {
+            width: 80px;
+            height: auto; /* Ensure images keep their aspect ratio */
+        }
+        .input-group {
+            justify-content: center;
+            align-items: baseline;
+        }
     </style>
     <body>
         <%@include file="header1.jsp"%>
@@ -214,7 +245,7 @@
                                 <div class="card">
                                     <div class="row d-flex justify-content-between px-3 top">
                                         <div class="d-flex">
-                                            <h5>ORDER <span class="text-primary font-weight-bold">#T12224</span></h5>
+                                            <h5>ORDER <span class="text-primary font-weight-bold">#ORD12224</span></h5>
                                         </div>
                                         <div class="d-flex flex-column text-sm-right">
                                             <p class="mb-0">Expected Arrival <span>01/12/24</span></p>
@@ -274,7 +305,7 @@
                                         <input type="email" id="email" name="email" class="form-control" value="Thuatnqb@fpt.edu.vn">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone-number">Phone Number*</label>
+                                        <label for="phone-number">Mobile*</label>
                                         <input type="text" id="phone-number" name="phone-number" class="form-control" value="0123456789">
                                     </div>
                                 </div>
@@ -295,12 +326,10 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
+                                    <div class="col-md-6">
                                         <label for="address">Address</label>
-                                        <input type="text" id="address" name="address" class="form-control" value="Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa huyện Thạch Thất Thành Phố Hà Nội">
+                                        <textarea type="text" id="address" name="address" class="form-control" >Số nhà 123, Đường quốc lộ 21, xã Thạch Hòa huyện Thạch Thất Thành Phố Hà Nội</textarea>
                                     </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-md-6">
                                         <label for="note">Note</label>
                                         <textarea id="note" name="note" class="form-control">Cần giao sớm trước 1/12/2024</textarea>
@@ -314,7 +343,7 @@
                             </form>
                         </div>
                         <div class="tab-pane" id="tab-3" role="tabpanel">
-                            <a href="#selectProductModal" class="btn btn-pill btn-success float-right" data-toggle="modal">
+                            <a href="#selectProductModal" class="btn btn-pill btn-success float-right" style="font-size: 16px" data-toggle="modal">
                                 Select more Product
                             </a>
 
@@ -324,7 +353,9 @@
                                         <th>Image</th>
                                         <th>Product</th>
                                         <th>Price</th>
-                                        <th>Quantity</th>
+                                        <th>
+                                            <div style="text-align:center">Quantity</div>
+                                        </th>
                                         <th>Amount</th>
                                         <th>Action</th>
                                     </tr>
@@ -332,8 +363,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="img/product06.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Vanessa
-                                            Tucker
+                                            <img src="img/product06.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> 
                                         </td>
                                         <td>
                                             <strong>Nồi áp suất elmic</strong><br>
@@ -345,14 +375,17 @@
                                             <span style="text-decoration: line-through;">2.090.000₫</span><br>
                                             -52%
                                         </td>
-                                        <td><input type="number" value="1" min="1" class="form-control"></td>
+                                        <td>
+                                            <div class="row" style="justify-content: center">
+                                                <input type="text" value="1" min="1" class="form-control quantity-input">
+                                            </div>
+                                        </td>
                                         <td>998.000₫</td>
                                         <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="img/product07.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> William
-                                            Harris
+                                            <img src="img/product07.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> 
                                         </td>
                                         <td>
                                             <strong>Máy hút bụi không dây</strong><br>
@@ -364,7 +397,11 @@
                                             <span style="text-decoration: line-through;">650.000₫</span><br>
                                             -7%
                                         </td>
-                                        <td><input type="number" value="1" min="1" class="form-control"></td>
+                                        <td>
+                                            <div class="row" style="justify-content: center">
+                                                <input type="text" value="1" min="1" class="form-control quantity-input">
+                                            </div>
+                                        </td>
                                         <td>606.620₫</td>
                                         <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
                                     </tr>
@@ -380,20 +417,21 @@
                         </div>
                     </div>
                 </div>
-                <!-- Modal Structure -->
-                <div id="selectProductModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true" style="font-size: 15px;">
+                <!-- Select Product Modal -->
+                <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="selectProductModalLabel" style="font-size: 15px;">Product Selection</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 15px;">
+                                <h5 class="modal-title" id="selectProductModalLabel">Product Selection</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
+                                <!-- Filter and Search Section -->
                                 <div class="form-row mb-3">
-                                    <div class="col-md-4">
-                                        <select class="form-control" style="font-size: 15px;">
+                                    <div class="col-md-4" >
+                                        <select class="form-select" style="font-size: 13px">
                                             <option>All Categories</option>
                                             <option value="laptop">Laptop</option>
                                             <option value="smartphone">Smartphone</option>
@@ -403,18 +441,18 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Enter key word to search" style="font-size: 15px;">
+                                        <input style="font-size: 13px" type="text" class="form-control" placeholder="Enter key word to search">
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-primary btn-block" style="font-size: 15px;">Search</button>
+                                        <button style="font-size: 13px;margin-top: 1px"  class="btn btn-primary btn-block">Search</button>
                                     </div>
                                 </div>
                                 <!-- Product List Table -->
                                 <div class="table-responsive">
-                                    <table class="table table-bordered" style="font-size: 15px;">
+                                    <table class="table table-bordered">
                                         <thead class="thead-light">
                                             <tr>
-                                                <th><input type="checkbox" style="font-size: 15px;"></th>
+                                                <th><input type="checkbox"></th>
                                                 <th>ProductID</th>
                                                 <th>Image</th>
                                                 <th>Product</th>
@@ -425,7 +463,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><input type="checkbox" checked style="font-size: 15px;"></td>
+                                                <td><input type="checkbox" checked></td>
                                                 <td>GD06</td>
                                                 <td><img src="img/product06.png" alt="Laptop"></td>
                                                 <td>
@@ -438,11 +476,21 @@
                                                     <span style="text-decoration: line-through;">2.090.000₫</span><br>
                                                     -52%
                                                 </td>
-                                                <td><input type="number" value="1" min="1" style="font-size: 15px;"></td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-outline-secondary"type="button" id="button-minus1">-</button>
+                                                        </div>
+                                                        <input id="quantity1" type="text" value="1" min="1" class="form-control quantity-input">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary" type="button" id="button-plus1">+</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td>998.000₫</td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" checked style="font-size: 15px;"></td>
+                                                <td><input type="checkbox" checked></td>
                                                 <td>GD07</td>
                                                 <td><img src="img/product07.png" alt="phone"></td>
                                                 <td>
@@ -455,13 +503,23 @@
                                                     <span style="text-decoration: line-through;">650.000₫</span><br>
                                                     -7%
                                                 </td>
-                                                <td><input type="number" value="1" min="1" style="font-size: 15px;"></td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-outline-secondary"type="button" id="button-minus2">-</button>
+                                                        </div>
+                                                        <input id="quantity2" type="text" value="1" min="0" class="form-control quantity-input">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary" type="button" id="button-plus2">+</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td>606.620₫</td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" style="font-size: 15px;"></td>
+                                                <td><input type="checkbox"></td>
                                                 <td>GD08</td>
-                                                <td><img src="img/product04.png" class="img-fluid product-image" alt="Product Image"></td>
+                                                <td><img src="path/to/image3.jpg" class="img-fluid product-image" alt="Product Image"></td>
                                                 <td>
                                                     <strong class="m-0">IPad</strong><br>
                                                     Category: Table<br>
@@ -471,21 +529,30 @@
                                                     <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
                                                     <small><del>3.050.000đ</del> -10%</small>
                                                 </td>
-                                                <td><input type="number" value="0" min="0" style="font-size: 15px;"></td>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <button class="btn btn-outline-secondary"type="button" id="button-minus3">-</button>
+                                                        </div>
+                                                        <input id="quantity3" type="text" value="0" min="0" class="form-control quantity-input">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary" type="button" id="button-plus3">+</button>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                                 <td>0đ</td>
-                                            </tr>   
-                                            <!-- Additional rows similar to the above -->
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <!-- Sub Total -->
                                 <div class="text-right">
-                                    <p class="mb-2" style="font-size: 15px;">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
+                                    <p class="mb-2">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: 15px;">Cancel</button>
-                                <button type="button" class="btn btn-success" style="font-size: 15px;">Add Selected Products</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success">Add Selected Products</button>
                             </div>
                         </div>
                     </div>
@@ -520,6 +587,66 @@
                     document.getElementById(this.dataset.tab).classList.add('active');
                 });
             });
+        </script>
+        <script>
+            // Select the elements for the first quantity input
+            const quantityInput1 = document.getElementById('quantity1');
+            const buttonPlus1 = document.getElementById('button-plus1');
+            const buttonMinus1 = document.getElementById('button-minus1');
+
+            // Select the elements for the second quantity input
+            const quantityInput2 = document.getElementById('quantity2');
+            const buttonPlus2 = document.getElementById('button-plus2');
+            const buttonMinus2 = document.getElementById('button-minus2');
+
+            const quantityInput3 = document.getElementById('quantity3');
+            const buttonPlus3 = document.getElementById('button-plus3');
+            const buttonMinus3 = document.getElementById('button-minus3');
+
+            // Function to update the first input value
+            const updateQuantity1 = (operation) => {
+                let currentValue = parseInt(quantityInput1.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput1.value = currentValue;
+            };
+
+            // Function to update the second input value
+            const updateQuantity2 = (operation) => {
+                let currentValue = parseInt(quantityInput2.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput2.value = currentValue;
+            };
+
+            // Function to update the third input value
+            const updateQuantity3 = (operation) => {
+                let currentValue = parseInt(quantityInput3.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput3.value = currentValue;
+            };
+
+            // Add event listeners to the buttons for the first input
+            buttonPlus1.addEventListener('click', () => updateQuantity1('plus'));
+            buttonMinus1.addEventListener('click', () => updateQuantity1('minus'));
+
+            // Add event listeners to the buttons for the second input
+            buttonPlus2.addEventListener('click', () => updateQuantity2('plus'));
+            buttonMinus2.addEventListener('click', () => updateQuantity2('minus'));
+
+            // Add event listeners to the buttons for the third input
+            buttonPlus3.addEventListener('click', () => updateQuantity3('plus'));
+            buttonMinus3.addEventListener('click', () => updateQuantity3('minus'));
         </script>
     </body>
 </html>
