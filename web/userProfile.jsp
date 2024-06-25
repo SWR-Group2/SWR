@@ -18,11 +18,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>body { opacity: 0; }</style>
+        <style>body {
+                opacity: 0;
+            }</style>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'UA-120946860-10', {'anonymize_ip': true});
         </script>
@@ -35,22 +39,8 @@
                 <%@include file="header2.jsp" %>
                 <main class="content">
                     <div class="container-fluid p-0">
-
-                        <h1 class="h3 mb-3">Settings</h1>
-
                         <div class="row">
-                            <div class="col-md-3 col-xl-2">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title mb-0">Profile Settings</h5>
-                                    </div>
-                                    <div class="list-group list-group-flush" role="tablist">
-                                        <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#myprofile" role="tab">My Profile</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-9 col-xl-10">
+                            <div class="flex">
                                 <div class="tab-content">
                                     <div class="tab-pane fade show active" id="myprofile" role="tabpanel">
                                         <div class="card">
@@ -86,31 +76,33 @@
                                                                 <textarea rows="2" class="form-control" id="address" name="address"></textarea>
                                                             </div>
                                                             <div class="row mb-3">
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-6">
                                                                     <label class="form-label" for="cityProvince">City/Province</label>
-                                                                    <select class="form-control" id="cityProvince" name="cityProvince">
+                                                                    <select class="form-select" id="cityProvince" name="cityProvince">
                                                                         <option value="" disabled selected>City/Province</option>
                                                                         <!-- Options go here -->
                                                                     </select>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                                <div class="col-md-6">
                                                                     <label class="form-label" for="district">District</label>
-                                                                    <select class="form-control" id="district" name="district">
+                                                                    <select class="form-select" id="district" name="district">
                                                                         <option value="" disabled selected>District</option>
                                                                         <!-- Options go here -->
                                                                     </select>
                                                                 </div>
-                                                                <div class="col-md-4">
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-md-6">
                                                                     <label class="form-label" for="wards">Wards</label>
-                                                                    <select class="form-control" id="wards" name="wards">
+                                                                    <select class="form-select" id="wards" name="wards">
                                                                         <option value="" disabled selected>Wards</option>
                                                                         <!-- Options go here -->
                                                                     </select>
                                                                 </div>
-                                                            </div>
-                                                            <div class="mb-3">
-                                                                <label class="form-label" for="userRole">User Role</label>
-                                                                <input type="text" class="form-control" id="userRole" name="userRole" readonly>
+                                                                <div class="col-md-6">
+                                                                    <label class="form-label" for="userRole">User Role</label>
+                                                                    <input type="text" class="form-control" id="userRole" name="userRole" readonly>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4 text-center">
@@ -191,7 +183,7 @@
                 }, 15000);
 
                 // Change password modal
-                document.querySelector('.btn-change-password').addEventListener('click', function() {
+                document.querySelector('.btn-change-password').addEventListener('click', function () {
                     var myModal = new bootstrap.Modal(document.getElementById('passwordChangeModal'), {});
                     myModal.show();
                 });
