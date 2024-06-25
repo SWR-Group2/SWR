@@ -56,13 +56,6 @@
             .form-control {
                 border-radius: 0;
             }
-            select.form-control {
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                background: url('data:image/svg+xml;utf8,<svg fill="%23000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
-                background-color: white;
-            }
             .form-check-label {
                 margin-left: 5px;
             }
@@ -82,8 +75,15 @@
                 border-color: #bd2130;
             }
             img {
-                width: 100px;
+                width: 80px;
                 height: auto; /* Ensure images keep their aspect ratio */
+            }
+            .quantity-input {
+                max-width: 50px;
+                text-align: center;
+            }
+            .card{
+                margin-left: -15px;
             }
         </style>
         <!-- END SETTINGS -->
@@ -104,15 +104,15 @@
                 <%@ include file="header2.jsp"%>
                 <main class="content">
                     <div class="container-fluid p-0" style="margin: 20px;">
+                        <h1 class="h3 mb-3">New Order</h1>
                         <div class="row">
                             <div class="card">
                                 <div class="card-header">
-                                    <h1 class="h3 mb-3">New Order</h1>
-                                </div>
-                                <div class="text-right mb-3">
-                                    <a href="#selectProductModal" class="btn btn-pill btn-success float-right" data-toggle="modal">
-                                        Select more Product
-                                    </a>
+                                    <div class="text-right mb-3">
+                                        <a href="#selectProductModal" class="btn btn-pill btn-success float-right" data-toggle="modal">
+                                            Select more Product
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
@@ -139,7 +139,11 @@
                                                     <span style="text-decoration: line-through;">2.090.000₫</span><br>
                                                     -52%
                                                 </td>
-                                                <td><input type="number" value="1" min="1"></td>
+                                                <td>
+                                                    <div class="row" style="justify-content: center">
+                                                        <input type="text" value="1" min="1" class="form-control quantity-input">
+                                                    </div>
+                                                </td>
                                                 <td>998.000₫</td>
                                                 <td><i class="align-middle" data-feather="trash-2" style="color: red;"></i></td>
                                             </tr>
@@ -155,7 +159,11 @@
                                                     <span style="text-decoration: line-through;">650.000₫</span><br>
                                                     -7%
                                                 </td>
-                                                <td><input type="number" value="1" min="1"></td>
+                                                <td>
+                                                    <div class="row" style="justify-content: center">
+                                                        <input type="text" value="1" min="1" class="form-control quantity-input">
+                                                    </div>
+                                                </td>
                                                 <td>606.620₫</td>
                                                 <td><i class="align-middle" data-feather="trash-2" style="color: red;"></i></td>
                                             </tr>
@@ -170,7 +178,9 @@
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="cityProvince">City/Province</label>
-                                            <input type="text" class="form-control" id="cityProvince" value="Hà Nội">
+                                            <select id="cityProvince" class="form-select">
+                                                <option value="Hà Nội">Hà Nội</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -179,24 +189,28 @@
                                             <input type="email" class="form-control" id="email" value="Thuatnqb@fpt.edu.vn">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="phoneNumber">Phone Number*</label>
+                                            <label for="phoneNumber">Mobile*</label>
                                             <input type="text" class="form-control" id="phoneNumber" value="0123456789">
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label for="district">District</label>
-                                            <input type="text" class="form-control" id="district" value="Thạch Thất">
+                                            <select id="district" class="form-select">
+                                                <option value="Thạch Thất">Thạch Thất</option>
+                                            </select>
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="wards">Wards</label>
-                                            <input type="text" class="form-control" id="wards" value="Thạch Hòa">
+                                            <select id="wards" class="form-select">
+                                                <option value="Thạch Hòa">Thạch Hòa</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
                                             <label>Delivery Status*</label>
-                                            <select id="Delivery status" class="form-control">
+                                            <select id="Delivery status" class="form-select">
                                                 <option value="processing">Processing</option>
                                                 <option value="shipped">Shipped</option>
                                                 <option value="enroute">En Route</option>
@@ -264,12 +278,8 @@
                     </div>
                 </main>
                 <%@ include file="footer2.jsp"%>
-
             </div>
-
         </div>
-
-
         <!-- Select Product Modal -->
         <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -284,7 +294,7 @@
                         <!-- Filter and Search Section -->
                         <div class="form-row mb-3">
                             <div class="col-md-4">
-                                <select class="form-control">
+                                <select class="form-select">
                                     <option>All Categories</option>
                                     <option value="laptop">Laptop</option>
                                     <option value="smartphone">Smartphone</option>
@@ -329,7 +339,17 @@
                                             <span style="text-decoration: line-through;">2.090.000₫</span><br>
                                             -52%
                                         </td>
-                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus1">-</button>
+                                                </div>
+                                                <input id="quantity1" type="text" value="1" min="1" class="form-control quantity-input">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus1">+</button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>998.000₫</td>
                                     </tr>
                                     <tr>
@@ -346,7 +366,17 @@
                                             <span style="text-decoration: line-through;">650.000₫</span><br>
                                             -7%
                                         </td>
-                                        <td><input type="number" value="1" min="1"></td>
+                                        <td>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus2">-</button>
+                                                </div>
+                                                <input id="quantity2" type="text" value="1" min="0" class="form-control quantity-input">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus2">+</button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>606.620₫</td>
                                     </tr>
                                     <tr>
@@ -362,7 +392,17 @@
                                             <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
                                             <small><del>3.050.000đ</del> -10%</small>
                                         </td>
-                                        <td><input type="number" value="0" min="0"></td>
+                                        <td>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus3">-</button>
+                                                </div>
+                                                <input id="quantity3" type="text" value="0" min="0" class="form-control quantity-input">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus3">+</button>
+                                                </div>
+                                            </div>
+                                        </td>
                                         <td>0đ</td>
                                     </tr>
                                 </tbody>
@@ -384,5 +424,65 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            // Select the elements for the first quantity input
+            const quantityInput1 = document.getElementById('quantity1');
+            const buttonPlus1 = document.getElementById('button-plus1');
+            const buttonMinus1 = document.getElementById('button-minus1');
+
+            // Select the elements for the second quantity input
+            const quantityInput2 = document.getElementById('quantity2');
+            const buttonPlus2 = document.getElementById('button-plus2');
+            const buttonMinus2 = document.getElementById('button-minus2');
+
+            const quantityInput3 = document.getElementById('quantity3');
+            const buttonPlus3 = document.getElementById('button-plus3');
+            const buttonMinus3 = document.getElementById('button-minus3');
+
+            // Function to update the first input value
+            const updateQuantity1 = (operation) => {
+                let currentValue = parseInt(quantityInput1.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput1.value = currentValue;
+            };
+
+            // Function to update the second input value
+            const updateQuantity2 = (operation) => {
+                let currentValue = parseInt(quantityInput2.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput2.value = currentValue;
+            };
+
+            // Function to update the third input value
+            const updateQuantity3 = (operation) => {
+                let currentValue = parseInt(quantityInput3.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue >= 1) {
+                    currentValue -= 1;
+                }
+                quantityInput3.value = currentValue;
+            };
+
+            // Add event listeners to the buttons for the first input
+            buttonPlus1.addEventListener('click', () => updateQuantity1('plus'));
+            buttonMinus1.addEventListener('click', () => updateQuantity1('minus'));
+
+            // Add event listeners to the buttons for the second input
+            buttonPlus2.addEventListener('click', () => updateQuantity2('plus'));
+            buttonMinus2.addEventListener('click', () => updateQuantity2('minus'));
+
+            // Add event listeners to the buttons for the third input
+            buttonPlus3.addEventListener('click', () => updateQuantity3('plus'));
+            buttonMinus3.addEventListener('click', () => updateQuantity3('minus'));
+        </script>
     </body>
 </html>
