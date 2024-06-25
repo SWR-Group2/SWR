@@ -27,7 +27,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>body {
+        <style>
+            body {
                 opacity: 0;
             }
             .d-flex {
@@ -169,6 +170,13 @@
             .summary {
                 text-align: right;
             }
+            .quantity-input {
+                max-width: 50px;
+                text-align: center;
+            }
+            .table img{
+                max-width: 80px;
+            }
         </style>
         <!-- END SETTINGS -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
@@ -205,7 +213,7 @@
                                             <div class="card">
                                                 <div class="row d-flex justify-content-between px-3 top">
                                                     <div class="d-flex">
-                                                        <h5>ORDER <span class="text-primary font-weight-bold">#T12224</span></h5>
+                                                        <h5>ORDER <span class="text-primary font-weight-bold">#ORD012224</span></h5>
                                                     </div>
                                                     <div class="d-flex flex-column text-sm-right">
                                                         <p class="mb-0">Expected Arrival <span>01/12/24</span></p>
@@ -265,7 +273,7 @@
                                                     <input type="email" id="email" name="email" class="form-control" value="Thuatnqb@fpt.edu.vn">
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="phone-number">Phone Number*</label>
+                                                    <label for="phone-number">Mobile*</label>
                                                     <input type="text" id="phone-number" name="phone-number" class="form-control" value="0123456789">
                                                 </div>
                                             </div>
@@ -294,15 +302,20 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label for="order-status">Order Status</label>
-                                                    <div>
-                                                        <input type="radio" id="status-verified" name="order-status" value="verified">
-                                                        <label for="status-verified">Verified</label>
-                                                        <input type="radio" id="status-paid" name="order-status" value="paid">
-                                                        <label for="status-paid">Paid</label>
-                                                        <input type="radio" id="status-shipping" name="order-status" value="shipping" checked>
-                                                        <label for="status-shipping">Shipping</label>
-                                                        <input type="radio" id="status-shipped" name="order-status" value="shipped">
-                                                        <label for="status-shipped">Shipped</label>
+                                                    <div style="display: flex;justify-content: space-between " class="form-check">
+                                                        <div><input class="form-check-input" type="radio" id="status-verified" name="order-status" value="verified">
+                                                            <label for="status-verified">Verified</label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="form-check-input" type="radio" id="status-paid" name="order-status" value="paid">
+                                                            <label for="status-paid">Paid</label>
+                                                        </div>
+                                                        <div><input class="form-check-input" type="radio" id="status-shipping" name="order-status" value="shipping" checked>
+                                                            <label for="status-shipping">Shipping</label>
+                                                        </div>
+                                                        <div><input class="form-check-input" type="radio" id="status-shipped" name="order-status" value="shipped">
+                                                            <label for="status-shipped">Shipped</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
@@ -318,26 +331,143 @@
                                         </form>
                                     </div>
                                     <div class="tab-pane" id="tab-3" role="tabpanel">
-                                            <table class="table table-striped table-hover">
-                                                <thead>
+                                        <a href="#selectProductModal" class="btn btn-pill btn-success float-right" style="font-size: 16px" data-toggle="modal">
+                                            Select more Product
+                                        </a>
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Image</th>
+                                                    <th>Product</th>
+                                                    <th>Price</th>
+                                                    <th>Quantity</th>
+                                                    <th>Amount</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img src="img/product06.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> 
+                                                    </td>
+                                                    <td>
+                                                        <strong>Nồi áp suất elmic</strong><br>
+                                                        Category: Đồ gia dụng<br>
+                                                        Available: 10
+                                                    </td>
+                                                    <td>
+                                                        <span style="color: red;">998.000₫</span><br>
+                                                        <span style="text-decoration: line-through;">2.090.000₫</span><br>
+                                                        -52%
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-outline-secondary"type="button" id="button-minus1">-</button>
+                                                            </div>
+                                                            <input id="quantity1" type="text" value="1" min="1"  class="form-control quantity-input">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button" id="button-plus1">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>998.000₫</td>
+                                                    <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="img/product07.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> 
+                                                    </td>
+                                                    <td>
+                                                        <strong>Máy hút bụi không dây</strong><br>
+                                                        Category: Đồ gia dụng<br>
+                                                        Available: 8
+                                                    </td>
+                                                    <td>
+                                                        <span style="color: red;">606.620₫</span><br>
+                                                        <span style="text-decoration: line-through;">650.000₫</span><br>
+                                                        -7%
+                                                    </td>
+                                                    <td>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <button class="btn btn-outline-secondary"type="button" id="button-minus2">-</button>
+                                                            </div>
+                                                            <input id="quantity2" type="text" value="1" min="1" class="form-control quantity-input">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button" id="button-plus2">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>606.620₫</td>
+                                                    <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="summary">
+                                            <p>Sub Total: 1.604.620₫</p>
+                                            <p>Shipping Fee: <span style="color: red;">+25.000₫</span></p>
+                                            <p><strong>Sub Total: 1.629.620₫</strong></p>
+
+                                        </div>
+                                        <button class="btn btn-pill btn-success" style="width: 85px;">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Select Product Modal -->
+                        <div class="modal fade" id="selectProductModal" tabindex="-1" role="dialog" aria-labelledby="selectProductModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="selectProductModalLabel">Product Selection</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Filter and Search Section -->
+                                        <div class="form-row mb-3">
+                                            <div class="col-md-4" >
+                                                <select class="form-select" style="font-size: 13px">
+                                                    <option>All Categories</option>
+                                                    <option value="laptop">Laptop</option>
+                                                    <option value="smartphone">Smartphone</option>
+                                                    <option value="tablet">Tablet</option>
+                                                    <option value="accessories">Accessories</option>
+                                                    <option value="software">Software</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input style="font-size: 13px" type="text" class="form-control" placeholder="Enter key word to search">
+                                            </div>
+                                            <div class="col-md-2">
+                                                <button style="font-size: 13px;margin-top: 1px"  class="btn btn-primary btn-block">Search</button>
+                                            </div>
+                                        </div>
+                                        <!-- Product List Table -->
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered">
+                                                <thead class="thead-light">
                                                     <tr>
+                                                        <th><input type="checkbox"></th>
+                                                        <th>ProductID</th>
                                                         <th>Image</th>
                                                         <th>Product</th>
                                                         <th>Price</th>
                                                         <th>Quantity</th>
                                                         <th>Amount</th>
-                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD06</td>
+                                                        <td><img src="img/product06.png" alt="Laptop"></td>
                                                         <td>
-                                                            <img src="img/product06.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> Vanessa
-                                                            Tucker
-                                                        </td>
-                                                        <td>
-                                                            <strong>Nồi áp suất elmic</strong><br>
-                                                            Category: Đồ gia dụng<br>
+                                                            <strong>Laptop Abx</strong><br>
+                                                            Category: Laptop<br>
                                                             Available: 10
                                                         </td>
                                                         <td>
@@ -345,18 +475,26 @@
                                                             <span style="text-decoration: line-through;">2.090.000₫</span><br>
                                                             -52%
                                                         </td>
-                                                        <td><input type="number" value="1" min="1" class="form-control"></td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus1">-</button>
+                                                                </div>
+                                                                <input id="quantity1" type="text" value="1" min="1" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus1">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                         <td>998.000₫</td>
-                                                        <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
                                                     </tr>
                                                     <tr>
+                                                        <td><input type="checkbox" checked></td>
+                                                        <td>GD07</td>
+                                                        <td><img src="img/product07.png" alt="phone"></td>
                                                         <td>
-                                                            <img src="img/product07.png" width="48" height="48" class="rounded-circle me-2" alt="Avatar"> William
-                                                            Harris
-                                                        </td>
-                                                        <td>
-                                                            <strong>Máy hút bụi không dây</strong><br>
-                                                            Category: Đồ gia dụng<br>
+                                                            <strong>Smartphone</strong><br>
+                                                            Category: Phone<br>
                                                             Available: 8
                                                         </td>
                                                         <td>
@@ -364,19 +502,56 @@
                                                             <span style="text-decoration: line-through;">650.000₫</span><br>
                                                             -7%
                                                         </td>
-                                                        <td><input type="number" value="1" min="1" class="form-control"></td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus2">-</button>
+                                                                </div>
+                                                                <input id="quantity2" type="text" value="1" min="0" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus2">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                         <td>606.620₫</td>
-                                                        <td><a href="#"><i style="color: red;" data-feather="trash-2"></i></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><input type="checkbox"></td>
+                                                        <td>GD08</td>
+                                                        <td><img src="path/to/image3.jpg" class="img-fluid product-image" alt="Product Image"></td>
+                                                        <td>
+                                                            <strong class="m-0">IPad</strong><br>
+                                                            Category: Table<br>
+                                                            Available: 5
+                                                        </td>
+                                                        <td>
+                                                            <p class="m-0"><span class="text-danger">2.745.000đ</span></p>
+                                                            <small><del>3.050.000đ</del> -10%</small>
+                                                        </td>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <button class="btn btn-outline-secondary"type="button" id="button-minus3">-</button>
+                                                                </div>
+                                                                <input id="quantity3" type="text" value="0" min="0" class="form-control quantity-input">
+                                                                <div class="input-group-append">
+                                                                    <button class="btn btn-outline-secondary" type="button" id="button-plus3">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>0đ</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        <div class="summary">
-                                            <p>Sub Total: 1.604.620₫</p>
-                                            <p>Shipping Fee: <span style="color: red;">+25.000₫</span></p>
-                                            <p><strong>Sub Total: 1.629.620₫</strong></p>
-                                            
                                         </div>
-                                        <button class="btn btn-pill btn-success" style="width: 85px;">Save</button>
+                                        <!-- Sub Total -->
+                                        <div class="text-right">
+                                            <p class="mb-2">Sub Total of Selected Product: <span class="font-weight-bold">1.604.620đ</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-success">Add Selected Products</button>
                                     </div>
                                 </div>
                             </div>
@@ -424,6 +599,47 @@
                 modal.find('#editRole').val(role);
                 modal.find('input[name="editStatus"][value="' + status + '"]').prop('checked', true);
             });
+        </script>
+        <script>
+            // Select the elements for the first quantity input
+            const quantityInput1 = document.getElementById('quantity1');
+            const buttonPlus1 = document.getElementById('button-plus1');
+            const buttonMinus1 = document.getElementById('button-minus1');
+
+            // Select the elements for the second quantity input
+            const quantityInput2 = document.getElementById('quantity2');
+            const buttonPlus2 = document.getElementById('button-plus2');
+            const buttonMinus2 = document.getElementById('button-minus2');
+
+            // Function to update the first input value
+            const updateQuantity1 = (operation) => {
+                let currentValue = parseInt(quantityInput1.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue > 1) {
+                    currentValue -= 1;
+                }
+                quantityInput1.value = currentValue;
+            };
+
+            // Function to update the second input value
+            const updateQuantity2 = (operation) => {
+                let currentValue = parseInt(quantityInput2.value);
+                if (operation === 'plus') {
+                    currentValue += 1;
+                } else if (operation === 'minus' && currentValue > 1) {
+                    currentValue -= 1;
+                }
+                quantityInput2.value = currentValue;
+            };
+
+            // Add event listeners to the buttons for the first input
+            buttonPlus1.addEventListener('click', () => updateQuantity1('plus'));
+            buttonMinus1.addEventListener('click', () => updateQuantity1('minus'));
+
+            // Add event listeners to the buttons for the second input
+            buttonPlus2.addEventListener('click', () => updateQuantity2('plus'));
+            buttonMinus2.addEventListener('click', () => updateQuantity2('minus'));
         </script>
     </body>
 </html>

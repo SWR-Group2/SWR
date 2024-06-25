@@ -61,7 +61,7 @@
                     <div class="modal-body">
                         <form id="createUserForm">
                             <div class="form-group">
-                                <label for="name">Name*</label>
+                                <label for="name">Full Name*</label>
                                 <input type="text" class="form-control" id="name" required>
                             </div>
                             <div class="form-group">
@@ -76,17 +76,17 @@
                                     <option value="guest">Ware House Staff</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="status">Status:</label>
-                                <div class="form-check">
+                            <div class="form-group row">
+                                <label for="status" class="col-md-3">Status:</label>
+                                <div class="form-check col-md-3">
                                     <input class="form-check-input" type="radio" name="status" id="active" value="active" required checked>
                                     <label class="form-check-label" for="active">Active</label>
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check col-md-3">
                                     <input class="form-check-input" type="radio" name="status" id="inactive" value="inactive" required>
                                     <label class="form-check-label" for="inactive">Inactive</label>
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check col-md-3">
                                     <input class="form-check-input" type="radio" name="status" id="unverified" value="unverified" required>
                                     <label class="form-check-label" for="unverified">Unverified</label>
                                 </div>
@@ -103,70 +103,6 @@
             </div>
         </div>
 
-        <!-- Edit User Modal -->
-        <div class="modal fade" id="editUserModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Edit User</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal Body -->
-                    <div class="modal-body">
-                        <form id="editUserForm">
-                            <div class="form-group">
-                                <label for="editAvatar">Avatar</label>
-                                <input type="file" class="form-control-file" id="editAvatar" accept="image/*">
-                            </div>
-                            <div class="form-group">
-                                <label for="editName">Name*</label>
-                                <input type="text" class="form-control" id="editName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="editEmail">Email*</label>
-                                <input type="email" class="form-control" id="editEmail" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="editPhoneNumber">Phone Number</label>
-                                <input type="text" class="form-control" id="editPhoneNumber">
-                            </div>
-                            <div class="form-group">
-                                <label for="editRole">Role:</label>
-                                <select class="form-control" id="editRole" required>
-                                    <option value="admin">Sale Staff</option>
-                                    <option value="user">User</option>
-                                    <option value="guest">Ware House Staff</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="editStatus">Status:</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="editStatus" id="editActive" value="active" required>
-                                    <label class="form-check-label" for="editActive">Active</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="editStatus" id="editInactive" value="inactive" required>
-                                    <label class="form-check-label" for="editInactive">Inactive</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="editStatus" id="editUnverified" value="unverified" required>
-                                    <label class="form-check-label" for="editUnverified">Unverified</label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <div class="wrapper">
             <%@include file="nav-bar.jsp" %>
             <div class="main">
@@ -179,7 +115,7 @@
                                 <div class="card-header">
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterRole">
+                                            <select class="form-select" id="filterRole">
                                                 <option value="">All Role</option>
                                                 <option value="admin">Sale staff</option>
                                                 <option value="user">User</option>
@@ -189,7 +125,7 @@
                                     </form>
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterStatus">
+                                            <select class="form-select" id="filterStatus">
                                                 <option value="">All Status</option>
                                                 <option value="active">Active</option>
                                                 <option value="inactive">Inactive</option>
@@ -212,24 +148,26 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Name</th>
+                                            <th>Full Name</th>
+                                            <th>Username</th>
                                             <th>Email</th>
                                             <th>Mobile</th>
-                                            <th>Status</th>
                                             <th>Role</th>
+                                            <th>Status</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Vanessa Tucker</td>
-                                            <td>vanser@gmail.com</td>
+                                            <td>Do Tien Thuat</td>
+                                            <td>tienthuat123</td>
+                                            <td>tienthuat@gmail.com</td>
                                             <td>012345678</td>
-                                            <th>Active</th>
                                             <th>WareHouse Staff</th>
+                                            <th>Active</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="1" data-name="Vanessa Tucker" data-email="vanser@gmail.com" data-role="guest" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
+                                                <a href="userDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
                                                     <label class="custom-control-label" for="customSwitch1"></label>
@@ -238,13 +176,14 @@
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>William Harris</td>
-                                            <td>william@gmail.com</td>
+                                            <td>Do Duc Vin</td>
+                                            <td>dovin</td>
+                                            <td>ducvin@gmail.com</td>
                                             <td>012345678</td>
-                                            <th>Inactive</th>
                                             <th>User</th>
+                                            <th>Inactive</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="2" data-name="William Harris" data-email="william@gmail.com" data-role="user" data-status="inactive"><i class="align-middle" data-feather="eye"></i></a>
+                                                <a href="userDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch2">
                                                     <label class="custom-control-label" for="customSwitch2"></label>
@@ -253,13 +192,14 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Sharon Lessman</td>
-                                            <td>sharon@gmail.com</td>
+                                            <td>Nguyen Quan Ba Uoc</td>
+                                            <td>bauoc</td>
+                                            <td>bauoc@gmail.com</td>
                                             <td>012345678</td>
-                                            <th>Active</th>
                                             <th>User</th>
+                                            <th>Active</th>
                                             <td class="table-action">
-                                                <a href="#" data-toggle="modal" data-target="#editUserModal" data-id="3" data-name="Sharon Lessman" data-email="sharon@gmail.com" data-role="user" data-status="active"><i class="align-middle" data-feather="eye"></i></a>
+                                                <a href="userDetail.jsp"><i class="align-middle" data-feather="eye"></i></a>
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" id="customSwitch3" checked>
                                                     <label class="custom-control-label" for="customSwitch3"></label>
