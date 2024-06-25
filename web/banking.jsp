@@ -1,10 +1,3 @@
-<%-- 
-    Document   : banking
-    Created on : Jun 25, 2024, 1:48:02 PM
-    Author     : AD
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +14,14 @@
 <link href="//fonts1.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
 <link href='//fonts1.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'> 
 <!-- //web font -->
+<style>
+body {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.photoroom.com%2Fvi%2Fthu-vien-nen%2Fnen-trang&psig=AOvVaw01qaYdXMzhrIS7edkiE4T9&ust=1719386601152000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiz8q2c9oYDFQAAAAAdAAAAABAY'); /* ???ng d?n t?i ?nh n?n */
+    background-size: cover; /* ??m b?o ?nh n?n ph? kín toàn b? trang */
+    background-position: center; /* Canh gi?a ?nh n?n */
+    background-repeat: no-repeat; /* Không l?p l?i ?nh n?n */
+}
+</style>
 </head>
 <body>
 	<!-- main -->
@@ -72,7 +73,7 @@
 	<!-- //main -->
 	<!-- copyright -->
 	<div class="w3lscopy-agile">
-		<p>Â© 2017 UI Card Payment. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
+		<p>© 2017 UI Card Payment. All rights reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a></p>
 	</div>
 	<!-- //copyright -->  
 	<!-- Validator js -->  
