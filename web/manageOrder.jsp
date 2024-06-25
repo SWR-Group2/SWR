@@ -58,7 +58,7 @@
                                 <div class="card-header">
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterRole">
+                                            <select class="form-select" id="filterRole">
                                                 <option value="">All Sale Staff</option>
                                                 <option value="admin">Đức Vinh</option>
                                                 <option value="user">Bá Ức</option>
@@ -67,7 +67,7 @@
                                     </form>
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterStatus">
+                                            <select class="form-select" id="filterStatus">
                                                 <option value="">All Status</option>
                                                 <option value="active">Summited</option>
                                                 <option value="inactive">Paid</option>
@@ -77,7 +77,7 @@
                                     </form>
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterStatus">
+                                            <select class="form-select" id="filterStatus">
                                                 <option value="">From</option>
                                                 <option value="">16/6/2024</option>
                                             </select>
@@ -85,7 +85,7 @@
                                     </form>
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterStatus">
+                                            <select class="form-select" id="filterStatus">
                                                 <option value="">To</option>
                                                 <option value="">16/6/2024</option>
                                             </select>
@@ -108,7 +108,7 @@
                                             <th>Order Date</th>
                                             <th>Receiver</th>
                                             <th>Email</th>
-                                            <th>Phone Number</th>
+                                            <th>Mobile</th>
                                             <th>Amount</th>
                                             <th>Created By</th>
                                             <th>Status</th>
