@@ -99,7 +99,7 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <a class="btn btn-square btn-success float-right" href="createOrder.jsp">New Order</a>
+                                    <a class="btn btn-square btn-success right" href="createOrder.jsp">New Order</a>
                                 </div>
                                 <table class="table">
                                     <thead>
