@@ -14,18 +14,6 @@
     <body>
         <!-- HEADER -->
         <header>
-            <!-- TOP HEADER -->
-            <div id="top-header">
-                <div class="container">
-                    <ul class="header-links pull-left">
-                        <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-                        <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-                        <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /TOP HEADER -->
-
             <!-- MAIN HEADER -->
             <div id="header">
                 <!-- container -->
@@ -106,12 +94,10 @@
                                         <span>My Account</span>
                                     </a>
                                     <div class="cart-dropdown" style="width: 130px">
-                                        <a href="#">Profile</a><br>
+                                        <a href="userProfile.jsp">Profile</a><br>
                                         <a href="dashboard.jsp">DashBoard</a><br>
-                                        <a href="login.jsp">Login</a><br>
-                                        <a href="signUp.jsp">Register</a><br>
                                         <a href="orderHistory.jsp">My Order</a><br>
-                                        <a href="#">Logout</a><br>
+                                        <a href="homepage2.jsp">Logout</a><br>
                                     </div>
                                 </div>
 

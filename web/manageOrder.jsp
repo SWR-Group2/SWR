@@ -99,7 +99,7 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <a class="btn btn-square btn-success float-right" href="createOrder.jsp">New Order</a>
+                                    <a class="btn btn-square btn-success right" href="createOrder.jsp">New Order</a>
                                 </div>
                                 <table class="table">
                                     <thead>
@@ -117,7 +117,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>T12345</td>
+                                            <td>#ORD012345</td>
                                             <td>16/06/2024</td>
                                             <td>Bá Thuật</td>
                                             <td>Thuatnqb@fpt.edu.vn</td>
@@ -131,7 +131,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>T12333</td>
+                                            <td>#ORD012333</td>
                                             <td>16/06/2024</td>
                                             <td>Bá Quân</td>
                                             <td>Quannqb@fpt.edu.vn</td>
@@ -146,7 +146,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>T12332</td>
+                                            <td>#ORD012332</td>
                                             <td>16/06/2024</td>
                                             <td>Bá Ước</td>
                                             <td>Uocnqb@fpt.edu.vn</td>
@@ -161,7 +161,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>T12387</td>
+                                            <td>#ORD012387</td>
                                             <td>16/06/2024</td>
                                             <td>Bá Toàn</td>
                                             <td>Toannqb@fpt.edu.vn</td>
