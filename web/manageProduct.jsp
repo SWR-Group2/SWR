@@ -58,10 +58,10 @@
 
                         <div class="row">
                             <div class="card">
-                                <div class="card-header">
+                                <div class="card-header d-flex justify-content-between">
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterRole">
+                                            <select class="form-select" id="filterRole">
                                                 <option value="">All Category</option>
                                                 <option value="admin">Laptop</option>
                                                 <option value="user">Table</option>
