@@ -194,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="homepage.jsp" class="primary-btn order-submit">Submit</a>
+                    <a href="banking.jsp" class="primary-btn order-submit">Submit</a>
                 </div>
                 <!-- /Order Details -->
             </div>

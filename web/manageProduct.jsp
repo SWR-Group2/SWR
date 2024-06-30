@@ -17,11 +17,14 @@
 
         <title>OSS - Manage Product</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
 
