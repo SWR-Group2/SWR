@@ -38,7 +38,7 @@
                             <div class="text-center mt-4">
                                 <h1 class="h2">Sign In Now</h1>
                                 <p class="lead">
-                                    Sign Up Your Account <a href="http://localhost:8080/SWR/signUp.jsp">Click here</a>
+                                    Sign Up Your Account <a href="signUp.jsp">Click here</a>
                                 </p>
                             </div>
 
