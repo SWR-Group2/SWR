@@ -142,15 +142,15 @@
                     <div class="modal-body">
                         <form>
                             <div class="mb-3">
-                                <label for="newPassword1" class="form-label">New Password</label>
-                                <input type="password" class="form-control" id="newPassword1">
+                                <label for="newPassword1" class="form-label">Current Password</label>
+                                <input type="password" class="form-control" id="newPassword1" >
                             </div>
                             <div class="mb-3">
                                 <label for="newPassword2" class="form-label">New Password</label>
                                 <input type="password" class="form-control" id="newPassword2">
                             </div>
                             <div class="mb-3">
-                                <label for="passwordConfirmation" class="form-label">Password Confirmation</label>
+                                <label for="passwordConfirmation" class="form-label">New Password Confirmation</label>
                                 <input type="password" class="form-control" id="passwordConfirmation">
                             </div>
                         </form>
