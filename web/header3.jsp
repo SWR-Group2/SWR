@@ -31,10 +31,10 @@
                         <!-- /LOGO -->
 
                         <!-- SEARCH BAR -->
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <div class="header-search">
                                 <form action="publicProducts.jsp">
-                                    <input class="input" placeholder="Search here">
+                                    <input class="input" placeholder="Search here" style="border-radius: 40px 0 0 40px;">
                                     <button class="search-btn">Search</button>
                                 </form>
                             </div>
@@ -42,7 +42,7 @@
                         <!-- /SEARCH BAR -->
 
                         <!-- ACCOUNT -->
-                        <div class="col-md-3 clearfix">
+                        <div class="col-md-4 clearfix">
                             <div class="header-ctn">
                                 <!-- Cart -->
                                 <div class="dropdown">
@@ -88,19 +88,12 @@
                                 <!-- /Cart -->
 
                                 <!-- My Account -->
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-                                        <i class="fa fa-user-o"></i>
-                                        <span>My Account</span>
-                                    </a>
-                                    <div class="cart-dropdown" style="width: 130px">
-                                        <a href="userProfile.jsp">Profile</a><br>
-                                        <a href="dashboard.jsp">DashBoard</a><br>
-                                        <a href="orderHistory.jsp">My Order</a><br>
-                                        <a href="homepage2.jsp">Logout</a><br>
-                                    </div>
+                                <div class="logo">
+                                    <a href="signUp.jsp">Sign Up</a>
                                 </div>
-
+                                <div class="logo">
+                                    <a href="login.jsp">Sign In</a>
+                                </div>
                                 <!-- /My Account -->
 
                                 <!-- Menu Toogle -->

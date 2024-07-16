@@ -17,9 +17,9 @@
 <style>
 body {
     background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.photoroom.com%2Fvi%2Fthu-vien-nen%2Fnen-trang&psig=AOvVaw01qaYdXMzhrIS7edkiE4T9&ust=1719386601152000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiz8q2c9oYDFQAAAAAdAAAAABAY'); /* ???ng d?n t?i ?nh n?n */
-    background-size: cover; /* ??m b?o ?nh n?n ph? kín toàn b? trang */
-    background-position: center; /* Canh gi?a ?nh n?n */
-    background-repeat: no-repeat; /* Không l?p l?i ?nh n?n */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 </style>
 </head>
@@ -30,7 +30,7 @@ body {
 		<div class="main-agileinfo">
 			<div class="w3pay-left">
 				<div class="w3pay-left-text">
-					<img src="https://image.bnews.vn/MediaUpload/Org/2022/04/26/logo-bidv-20220426071253.jpg" alt=""/>
+					<img src="https://img.lovepik.com/free-png/20220125/lovepik-bank-icon-png-image_401708250_wh860.png" alt=""/>
 					<h2>Internet Banking</h2>
 					<p>Integer varius est vitae iaculis suscipit nam libero tempore cum soluta nobis.</p>
 					<h3>$ 20</h3> 

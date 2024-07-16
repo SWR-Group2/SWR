@@ -42,16 +42,10 @@
                             <a class="dropdown-item" href="homepage.jsp">
                                 <span class="align-middle">Homepage</span>
                             </a>
-                            <a class="dropdown-item" href="login.jsp">
-                                <span class="align-middle">Login</span>
-                            </a>
-                            <a class="dropdown-item" href="signUp.jsp">
-                                <span class="align-middle">Register</span>
-                            </a>
                             <a class="dropdown-item" href="orderHistory.jsp">
                                 <span class="align-middle">My Order</span>
                             </a>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="homepage2.jsp">
                                 <span class="align-middle">Logout</span>
                             </a>
                         </div>

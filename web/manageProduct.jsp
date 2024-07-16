@@ -17,23 +17,14 @@
 
         <title>OSS - Manage Product</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
         <link class="js-stylesheet" href="css/light.css" rel="stylesheet">
         <script src="js/settings.js"></script>
-        <style>
-            body {
-                opacity: 0;
-            }
-            .search-filter-group {
-                display: flex;
-                align-items: center;
-                width:600px;
-            }
-            .search-filter-group .input-group-navbar {
-                margin-right: 300px;
-            }
-        </style>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
 
@@ -47,6 +38,9 @@
     </head>
 
     <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+        
+        
+        
         <div class="wrapper">
             <%@ include file="nav-bar.jsp" %>
             <div class="main">
@@ -58,10 +52,10 @@
 
                         <div class="row">
                             <div class="card">
-                                <div class="card-header">
+                                <div class="card-header d-flex justify-content-between">
                                     <form class="d-inline-block">
                                         <div class="input-group input-group-navbar">
-                                            <select class="form-control" id="filterRole">
+                                            <select class="form-select" id="filterRole">
                                                 <option value="">All Category</option>
                                                 <option value="admin">Laptop</option>
                                                 <option value="user">Table</option>
@@ -77,7 +71,9 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <a class="btn btn-square btn-success float-right" >New Product</a>
+                                    <button type="button" class="btn btn-square btn-success float-right" data-toggle="modal" data-target="#createUserModal">
+                                        New Product
+                                    </button>
                                 </div>
                                 <table class="table">
                                     <thead>
