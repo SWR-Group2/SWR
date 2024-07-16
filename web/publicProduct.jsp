@@ -129,7 +129,7 @@
                             <h2 class="product-name">product name goes here</h2>
                             <div>
                                 <h3 class="product-price">12.000.000đ <del class="product-old-price">15.000.000đ</del></h3>
-                                <span class="product-available">In Stock</span>
+                                <span class="product-available"> Available : 50</span>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
@@ -148,7 +148,6 @@
                             <ul class="product-links">
                                 <li>Category:</li>
                                 <li><a href="#">Headphones</a></li>
-                                <li><a href="#">Accessories</a></li>
                             </ul>
 
                         </div>

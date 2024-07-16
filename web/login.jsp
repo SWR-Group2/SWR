@@ -31,6 +31,9 @@
     <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
         <main class="d-flex w-100 h-100">
             <div class="container d-flex flex-column">
+                <div class="row">
+
+                </div>
                 <div class="row vh-100">
                     <div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
                         <div class="d-table-cell align-middle">
@@ -40,19 +43,23 @@
                                 <p class="lead">
                                     Sign Up Your Account <a href="signUp.jsp">Click here</a>
                                 </p>
+                                <p class="lead">
+                                    <a href="homepage.jsp">Back to Homepage</a>
+                                </p>
+
                             </div>
 
-                            <div class="card">
+                            <div class="card mt-3">
                                 <div class="card-body">
                                     <div class="m-sm-4">
                                         <form>
                                             <div class="mb-3">
                                                 <label class="form-label">Email</label>
-                                                <input class="form-control form-control-lg" type="email" name="email" />
+                                                <input class="form-control form-control-lg" placeholder="Your Email" type="email" name="email" />
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label">Password</label>
-                                                <input class="form-control form-control-lg" type="password" name="password" />
+                                                <input class="form-control form-control-lg" placeholder="********" type="password" name="password" />
                                                 <small>
                                                     <a href="#" data-toggle="modal" data-target="#passwordResetModal">Forgot password?</a>
                                                 </small>
@@ -132,7 +139,6 @@
             </div>
         </div>
 
-
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -183,7 +189,6 @@
                                         // Perform update password logic here
                                         console.log("New password: " + newPassword);
                                     }
-
         </script>
 
     </body>
